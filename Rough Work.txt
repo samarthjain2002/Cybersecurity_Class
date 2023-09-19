@@ -1,0 +1,351 @@
+Target:
+	dlithe.com
+
+Passive IG:
+IP addresses of all domains and subdomains
+	Domain: dlithe.com
+	IPv4 address (217.21.91.85)
+	IPv6 address (2a02:4780:11:888:0:11af:a3af:1)
+	Subdomains
+DNS details / NameServer
+
+
+Add-ons:
+NetCraft
+Wappalyzer
+
+
+Target:
+	wipro.com
+	
+IPv4 address (13.224.68.9)
+IPv6 address (2600:9000:21ca:2600:13:4f33:b240:93a1)
+
+Domain Name
+wipro.com
+
+NameServer
+ns-1575.awsdns-04.co.uk
+
+
+Target:
+	techciti.com
+	
+Passive IG:
+IP addresses of all domains and subdomains
+IPv4 address (68.178.148.21)
+Subdomains: N/A
+	
+DNS details / NameServer
+ns47.domaincontrol.com
+
+Technologies Used:
+Font scripts
+
+Font Awesome
+4.7.0
+Web servers
+
+Apache HTTP Server
+CDN
+
+Cloudflare
+
+cdnjs
+JavaScript libraries
+
+jQuery
+1.9.1
+
+
+
+
+
+
+Web technologies Used
+Ecommerce
+Photo Gallery
+BLog: Workpress
+Javascript framework
+Video: Youtube
+Nightchat: Whatsapp
+
+
+
+
+
+
+CentralOps.net
+Domain name: wipro.com
+
+Name Server: NS-659.AWSDNS-18.NET
+Name Server: NS-326.AWSDNS-40.COM
+
+
+
+
+
+
+
+People related to
+Ex: LinkedIn
+
+
+
+iplogger.org
+Enter the website's url and create a short link.
+New URL is generated.
+Share the generated URL with anyone.
+The IP address of the people who logged in through the shared link.
+
+
+Wifi Password: Dlithe@Aug17
+
+
+Install multiple Virtual Machines
+Kali (Attacker) 2GB
+IP address: 10.0.2.15
+
+Windows 7 (Victim1) 1-2 GB
+IP address: 10.0.2.4
+
+Metasploitable (Victim2) 512 MB CPU 1 Use existing hard disk Import Add Metasploitable Extracted folder "*.mdk" file (Linux)
+Password: msfadmin
+Command:ifconfig
+Command: nmap -sV <IP Address>
+Command for shutdown: sudo poweroff -> Password
+IP address: 10.0.2.5
+
+Owasp Bw (Victim3) 512 MB
+IP address: 10.0.2.6
+
+
+
+
+
+https://hackwithbkob.wordpress.com/
+
+
+
+Vulnerabililty Scanning
+
+Categories of vulnerability scanning
+1) RCE (Remote Code Execution)	//any thing but should write code for it
+2) Command Execution			//only executes command allowed by the OS for the designated user
+3) DOS (Denial of Service)		//which blocks the authorized user from accessing it
+4) Backdoor						ES File Explorer, CCleaner, Cam Scanner
+5) Information disclosure (85%)
+
+Username: samy
+Password: zane
+
+
+3pqf7tvugG3fF24
+
+
+
+How to install Nessus on Kali Linux
+1.	Open Kali Linux VM on VirtualBox
+2.	Open the browser on Kali
+3.	Download Nessus
+4.	Open the Downloads folder in the File System
+5.	Right click an empty position
+6.	Select the Open Terminal Here
+7.	Install the Nessus using below commands:
+a.	#ls -la 			 	//List all the files in cd
+b.	#chmod +x <filename> 	//Add executable permission to the file
+c.	#dpkg -i <filename>  	//Install the file
+d.	#service nessusd start		//Start nessus
+e.	#dpkg -r nessus		//To uninstall the nessus
+f.	#service nessusd stop		//Stop nessus
+g.	#service nessusd restart	//To restart nessus
+h.	#service nessusd status	//To check the status of nessus
+8.	Open a new tab on the browser and enter the url: https://127.0.0.1:8834
+9.	A Warning page is opened. WARNING: Potential Security Risk Ahead; Since we are installing the software click on “Advanced” and “Accept the Risk and Continue”.
+10.	A Welcome to Nessus page is opened, Click continue, "Register for Nessus Essentials” and Skip the activation code. A prompt is shown for you to enter the activation code.
+11.	Browse: Nessus Activation Code -> Obtain
+12.	Under Nessus Essential, register with a temporary e-mail
+13.	You’ll receive an activation code on your temp e-mail
+14.	Apply the activation code
+15.	Create a user account (Keep track of your credentials (IMP))
+Username: samy
+Password: zane
+16.	If the download failed, type
+Command: #service nessusd restart
+
+
+Nessus Activation Code: 9Y3F-XBQQ-EW9J-WWS6-EJHU
+
+Username: admin
+Password: localhost
+
+
+
+
+
+Vulnerability scanning is a proactive security practice that involves using specialized tools to identify weaknesses and security gaps within computer systems, networks, and applications. It scans for known vulnerabilities, misconfigurations, and outdated software versions that could potentially be exploited by malicious actors. The goal of vulnerability scanning is to provide organizations with insights into their security posture, enabling them to prioritize and remediate vulnerabilities before they are exploited, thereby reducing the risk of cyberattacks and data breaches. Regular vulnerability scanning is an essential component of maintaining a strong cybersecurity strategy.
+
+
+
+Metasploit (UnrealIRCD 3.2.8.1 Backdoor Command Execution)
+CANVAS () 
+
+
+For Unix-specific functionality, like using Unix shell commands on a Windows system, you would typically need to use a separate tool like the Windows Subsystem for Linux (WSL) or Cygwin.
+
+Description
+The remote Windows host is affected by the following vulnerabilities :
+- Multiple remote code execution vulnerabilities exist in Microsoft Server Message Block 1.0 (SMBv1)
+due to improper handling of certain requests. An unauthenticated, remote attacker can exploit these
+vulnerabilities, via a specially crafted packet, to execute arbitrary code. (CVE-2017-0143, CVE-2017-0144,
+CVE-2017-0145, CVE-2017-0146, CVE-2017-0148)
+- An information disclosure vulnerability exists in Microsoft Server Message Block 1.0 (SMBv1) due to
+improper handling of certain requests. An unauthenticated, remote attacker can exploit this, via a specially
+crafted packet, to disclose sensitive information. (CVE-2017-0147)
+ETERNALBLUE, ETERNALCHAMPION, ETERNALROMANCE, and ETERNALSYNERGY are four of multiple
+Equation Group vulnerabilities and exploits disclosed on 2017/04/14 by a group known as the Shadow
+Brokers. WannaCry / WannaCrypt is a ransomware program utilizing the ETERNALBLUE exploit, and
+EternalRocks is a worm that utilizes seven Equation Group vulnerabilities. Petya is a ransomware program
+that first utilizes CVE-2017-0199, a vulnerability in Microsoft Office, and then spreads via ETERNALBLUE.
+
+
+echo 
+
+Exploitation using Metasploit in Kali Linux is a pivotal technique in ethical hacking and penetration testing. Metasploit, a powerful open-source framework, empowers security professionals to identify vulnerabilities within systems and networks. By crafting and deploying exploit modules, analysts can assess an organization's defense mechanisms, aiding in the fortification of digital infrastructures. This introduction offers a glimpse into the dynamic realm of Metasploit-driven exploitation, enabling experts to proactively safeguard against potential cyber threats.
+
+
+
+21/tcp ftp				YY
+22/tcp ssh				YYYYYY
+23/tcp telnet			YYY
+25/tcp smtp				YYYYYYYYYYYYYYYYY
+53/tcp domain			YYYYYYYYY
+80/tcp http				YYYYYYYY
+111/tcp rpcbind			Y
+139/tcp netbios-ssn		YY
+445/tcp microsoft-ds	YYYYYYYY
+512/tcp exec			Y
+513/tcp login			Y
+514/tcp shell			YY
+1099/tcp rmiregistry	Y
+1524/tcp ingreslock		YY
+2049/tcp nfs			YYYY
+2121/tcp ccproxy-ftp	YY
+3306/tcp mysql			Y
+5432/tcp postgresql		YYYYYYYYYYY
+5900/tcp vnc			Y
+6000/tcp X11			Y
+6667/tcp irc			YY
+8009/tcp ajp13			YY
+8180/tcp unknown		YYYYY
+
+tcp/0					YYYYYY
+
+
+
+Client-side filtering refers to the practice of filtering and processing data directly within the user's web browser or client application, rather than on the server side. In this approach, the logic for filtering and displaying data is implemented using scripting languages like JavaScript within the context of the user's device.
+
+client-side filtering is typically implemented to improve user experience and responsiveness, security professionals often need to bypass or manipulate such filters to test the effectiveness of security controls
+
+
+
+File Inclusion is a type of vulnerability in web applications where an attacker is able to include files from the server into the web page being viewed by a user. This can lead to unauthorized access to sensitive files, execution of malicious code, and other security risks. There are two main variations of file inclusion: Local File Inclusion (LFI) and Remote File Inclusion (RFI).
+
+Local File Inclusion occurs when an attacker is able to include files that are present on the same server where the web application is hosted. The attacker manipulates input fields or parameters in the application to point to local files on the server.
+
+Remote File Inclusion occurs when an attacker is able to include files from a remote server into the web application. This is typically achieved by manipulating input parameters to include URLs pointing to external scripts hosted on the attacker's server.
+
+
+
+The OWASP Broken Web Applications (OWASP BWA) project is a collection of vulnerable web applications that have been deliberately designed with security flaws. These flaws are intended to serve as educational resources for individuals interested in learning about web application security. The project provides various vulnerable web applications written in different programming languages, frameworks, and technologies, allowing developers, security professionals, and researchers to practice identifying and mitigating security vulnerabilities in a controlled environment.
+
+The main purpose of the OWASP Broken Web Applications project is to promote awareness of common web application vulnerabilities and to provide a hands-on learning experience for individuals looking to improve their skills in secure coding, penetration testing, and security assessments. By exploring and experimenting with these deliberately vulnerable applications, users can gain practical insights into real-world security issues and how to address them effectively.
+
+The OWASP BWA project is part of the Open Web Application Security Project (OWASP), a nonprofit organization focused on improving the security of software. OWASP provides a wealth of resources, tools, and best practices for web application security, and the Broken Web Applications project is just one of the many initiatives they undertake to fulfill their mission.
+
+
+This package contains a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students & teachers to learn about web application security in a controlled class room environment.
+
+The aim of DVWA is to practice some of the most common web vulnerabilities, with various levels of difficulty, with a simple straightforward interface. Please note, there are both documented and undocumented vulnerabilities with this software. This is intentional. You are encouraged to try and discover as many issues as possible.
+
+
+WebGoat is a deliberately insecure application that allows interested developers just like you to test vulnerabilities commonly found in Java-based applications that use common and popular open source components.
+
+WebGoat provides a safe environment to practice exploiting security flaws commonly found in web applications. It covers a wide range of vulnerabilities, such as SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), insecure authentication mechanisms, and more. Users can navigate through different lessons or challenges within WebGoat to understand how these vulnerabilities work and how to prevent or mitigate them.
+
+
+OWASP Mutillidae 2 is a free, open-source web application that is deliberately vulnerable and designed for educational purposes to teach and demonstrate various web security vulnerabilities and attack techniques. The name "Mutillidae" is derived from the family name of ants, and it's meant to symbolize the different vulnerabilities that can exist in web applications, much like the diversity of ants in nature.
+
+
+The "Repeater" tab is a feature that allows security testers and web developers to manually modify and resend HTTP requests and observe the corresponding responses. Burp Suite is a widely used web vulnerability scanner and security testing tool.
+
+
+
+In the context of the OWASP Broken Web Application Project, an analysis was conducted on the project's handling of Cross-Site Scripting (XSS) vulnerabilities. By employing Burp Suite, the project's client-side filtering mechanisms were examined and found to be insufficient in preventing malicious input. The Burp Suite tools facilitated the discovery of a bypass technique that successfully circumvented the filtering, thus highlighting a critical weakness in the application's defense against XSS attacks. Additionally, the investigation revealed a susceptibility to file inclusion vulnerabilities within the OWASP Broken Web Application, underscoring the significance of addressing multiple security aspects to ensure a robust and resilient web application.
+
+
+In conclusion, the assessment of the OWASP Broken Web Application project showcased the complexity of securing web applications against common vulnerabilities. The utilization of Burp Suite to expose shortcomings in client-side filtering underscored the importance of implementing robust input validation and output encoding practices. The successful bypass of filtering mechanisms demonstrated the need for a layered defense strategy that encompasses both client-side and server-side security measures. Furthermore, the identification of file inclusion vulnerabilities emphasizes the necessity of continuous testing and remediation efforts to maintain a strong security posture. Ultimately, this analysis reinforces the critical role of security awareness and proactive measures in building resilient web applications.
+
+
+SQL injection is a malicious technique used by attackers to exploit vulnerabilities in a web application's input validation process. It occurs when an attacker inserts or "injects" malicious SQL code into user input fields, such as search boxes or login forms, that are not properly sanitized by the application. This can lead to unauthorized access to a database, disclosure of sensitive information, and potentially even data manipulation or deletion. SQL injection attacks can be prevented by using parameterized queries and input validation techniques to ensure that user input is sanitized and treated as data rather than executable code. Regular security audits and updates are crucial to protect against this common web application vulnerability.
+
+sqlmap -u <url_of_Website> –crawl=<depth> –dbs // To scan the website for SQL injection Vulnerability
+
+SQLmap is an open-source penetration testing tool that automates the process of identifying and exploiting SQL injection vulnerabilities in web applications and databases. It is primarily used by ethical hackers and security professionals to assess the security of web applications and uncover potential weaknesses that could be exploited by attackers.
+
+Kali Linux is designed to be accessible to a wide range of users, and it is available in various formats to accommodate different needs and preferences.
+
+Burp Suite is a web vulnerability scanner and security testing tool commonly used by cybersecurity professionals for web application security assessments.
+
+Web Application Scanning: Burp Suite can identify and report vulnerabilities in web applications, such as SQL injection, cross-site scripting (XSS), and more.
+
+Proxy: Burp Suite acts as a proxy between a web browser and a web application, allowing users to intercept and modify HTTP requests and responses.
+
+Intruder: The Intruder tool in Burp Suite is used to automate various attacks, but it is not specifically designed for password cracking. It can be used for tasks like fuzzing, which involves sending a large number of specially crafted requests to find vulnerabilities.
+
+Mutillidae 2, also known as "Mutillidae," is a deliberately vulnerable web application that is designed for educational and training purposes in the field of cybersecurity and web application security testing.
+
+ It is developed and maintained by OWASP (Open Web Application Security Project), a well-known organization focused on improving the security of software.
+ 
+ Mutillidae 2 is essentially a web application that contains a wide range of known security vulnerabilities, such as SQL injection, cross-site scripting (XSS), and more.
+ 
+ Password cracking on the login page of Mutillidae 2 or any web application for educational and testing purposes typically involves attempting to guess or crack the password of a user account using various techniques.
+ 
+ The parameters we are attacking are both the username and password fields of the "SecureBank" web application's login page.
+ 
+Cluster bomb fuzzing, which involves generating a wide range of random or semi-random input combinations, can help explore various code paths and uncover unexpected vulnerabilities.
+
+
+
+**Project Title:** Mitigating Cross-Site Request Forgery (CSRF) Vulnerabilities: A Comprehensive Analysis and Solution Framework
+
+**Introduction:**
+
+In the ever-evolving landscape of web application security, Cross-Site Request Forgery (CSRF) remains a persistent and potentially devastating threat. CSRF attacks exploit the trust that a user has in a web application to perform malicious actions on their behalf without their consent or awareness. These attacks can lead to unauthorized data manipulation, account hijacking, financial fraud, and various other security breaches, making CSRF one of the top concerns for web developers and security professionals.
+
+The objective of this project report is to provide a comprehensive understanding of CSRF vulnerabilities, their implications, and effective mitigation strategies. CSRF is a complex security issue that demands in-depth analysis, proactive defense mechanisms, and ongoing awareness to ensure the safety and integrity of web applications.
+
+**Scope of the Project:**
+
+This project encompasses a wide range of aspects related to CSRF, including but not limited to:
+
+1. **CSRF Attack Mechanisms:** We will delve into the mechanics of CSRF attacks, exploring how malicious actors exploit the trust relationship between users and web applications to forge unauthorized requests.
+
+2. **Real-World Examples:** To illustrate the severity of CSRF vulnerabilities, we will examine real-world case studies and notable incidents where CSRF attacks have led to data breaches and financial losses.
+
+3. **Impact Assessment:** This report will assess the potential impact of CSRF attacks on both users and organizations, highlighting the critical need for mitigation strategies.
+
+4. **Mitigation Techniques:** A central focus of this project will be the exploration of various mitigation techniques and best practices for safeguarding web applications against CSRF threats. This will include detailed discussions on implementing anti-CSRF tokens, Same-Site cookie attributes, and other security headers.
+
+5. **Security Awareness:** We will emphasize the importance of fostering a security-aware culture within development teams, promoting secure coding practices, and conducting regular security audits to identify and rectify CSRF vulnerabilities.
+
+6. **Tools and Frameworks:** This report will also provide an overview of available tools and frameworks that aid in the detection and prevention of CSRF vulnerabilities, helping developers streamline their security efforts.
+
+7. **Future Trends:** In the rapidly evolving field of cybersecurity, it is essential to anticipate emerging threats and trends. We will discuss potential future challenges related to CSRF and how organizations can adapt to stay ahead of cyber threats.
+
+By the end of this project report, readers will gain a thorough understanding of CSRF vulnerabilities, their potential consequences, and a comprehensive toolkit of strategies and best practices to effectively mitigate these threats. The insights and recommendations presented here will be valuable for web developers, security professionals, and organizations aiming to fortify their web applications against CSRF attacks, ultimately enhancing the security and trustworthiness of their online services.
+
+File Inclusion, in the context of web security, refers to the ability of a web application to include or reference files, often external files, in its operation. These files can be either local files (local file inclusion, LFI) or remote files (remote file inclusion, RFI). File inclusion vulnerabilities can be exploited by attackers to execute malicious code, access sensitive data, or compromise the security of a web application.
+
+
+The php-reverse-shell.php file is typically a script or PHP program that is used in the context of penetration testing or ethical hacking. It is designed to create a reverse shell connection between a target machine (the one running the PHP script) and an attacker-controlled machine. This type of script can be used to gain unauthorized access to a remote server or system for security testing purposes.

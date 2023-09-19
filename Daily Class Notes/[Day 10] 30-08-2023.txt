@@ -1,0 +1,50 @@
+OWASP
+IP address: 10.0.2.6
+
+Open the browser
+URL: http://10.0.2.6
+
+Damn Vulnerable Web Application
+Username: admin
+Password: admin
+
+XSS Reflected
+Commands
+SAM
+<strong>SAM</strong>
+<script>alert('SAM')</script>
+<h1>SAM</h1>
+
+OWASP WebGoat
+Username: webgoat
+Password: webgoat
+
+Start WebGoat
+	Cross-Site Scripting (XSS)
+		Phishing with XSS
+			Commands
+			<script>alert('SAM')</script>								//Display alert box
+			<script>alert(document.cookie)</script>						//Display sesion cookie
+			<script>window.location="https://www.google.com"</script>	//Redirection to a specific website
+
+	AJAX security
+		LAB: Client Side Filtering
+
+File Inclusion
+Types
+Local File Inclusion: Can access any file
+Remote File Inclusion: Can execute malicious code
+
+OWASP Mutillidae II
+	OWASP 2013
+		A4 - Insecure Direct Object References
+			Source Viewer
+				Source File Name: Select any file
+				View file
+
+Execute your file
+Burpsuite
+Request (Read only) -> Right click
+Send to repeater
+Open the Repeater tab
+Change the path

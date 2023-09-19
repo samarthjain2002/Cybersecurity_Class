@@ -1,0 +1,67 @@
+SQL INJECTION
+
+Input Validation
+Backend Validation
+Server Validation
+
+SQL Injection
+	Bypassing Authentication
+	Stealing Data
+
+
+
+uname: 1"or"1"="1
+pass: 1"or"1"="1
+
+ceh'or'bkob'='bkob
+1'or'1'='1
+
+OWASP BWA -> Mutillidae II -> A1 - Injection (SQL) -> SQLi Bypass Authentication -> Login
+OWASP BWA -> Mutillidae II -> A1 - Injection (SQL) -> SQLi - Extract Data -> USer Info (SQL)
+OWASP BWA -> DVWA -> SQL Injection
+
+Ways to find SQL Injection Vulnerability
+1) Web Application Scanner / Burpsuite Scanner (PRO-30K)
+2) SQL Map		--crawl option
+3) google dorks gbhacker's link
+
+Types of SQL Injection
+
+1) Error Based		We retrieve the data through error
+2) Union based 		We run an existing query along with the user defined query to retrieve the data
+3) Blind SQL 		Each query depends upon the data resulted in previous query
+	a. Boolean based	True or False
+	b. Time based 		Delay or No Delay
+	
+Note: SQL Map Git_hub: https://github.com/sqlmapproject/sqlmap
+
+https://hackwithbkob.wordpress.com/tag/cheat-sheets/
+
+Identify a Vulnerable web page
+Database_name
+Table_name
+Colum_name
+Dump
+
+
+Syntax: 
+$sqlmap -u http://testphp.vulnweb.com --crawl=3 --dbs
+Enter
+Enter
+
+Do you want to test this URL? y
+
+Crack: n
+
+Available Databases [2]
+Acuart
+Information schema
+
+SQL injection
+XSS
+LFI
+
+Presentation Tomorrow(06-09-2023)
+LFI(Local File Inclusion) -> What?
+							 How?
+							 Fix?

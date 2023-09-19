@@ -1,0 +1,6 @@
+No class
+
+Instruction:
+Todays Task:
+Try to find vulnerabilities in owasp-bwa machine and exploit it using metasploit
+Notes: if you any queries send it on this group

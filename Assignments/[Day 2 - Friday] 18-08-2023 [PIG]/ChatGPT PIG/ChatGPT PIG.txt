@@ -1,0 +1,198 @@
+Target:
+	ChatGPT
+	Domain:	openai.com
+	Site: https://chat.openai.com
+	Alias: chat.openai.com
+Passive IG(Information Gathering)
+IP addresses:
+	IPv4 address (104.18.2.161)
+	IPv6 address (2606:4700:0:0:0:0:6812:2a1)
+	Subdomains:
+		auth0.openai.com
+		beta.openai.com
+		platform.openai.com
+		labs.openai.com
+		help.openai.com
+		pay.openai.com
+		community.openai.com
+		feather.openai.com
+		chat.apps.openai.com
+		status.openai.com
+		cdn.openai.com
+		api.openai.com
+		spinningup.openai.com
+		www.openai.com
+		url3243.email.openai.com
+		microscope.openai.com
+		jukebox.openai.com	
+		gym.openai.com
+		challenge.openai.com
+		home.apps.openai.com
+DNS details / NameServer:
+	NS1-02.AZURE-DNS.COM
+	NS2-02.AZURE-DNS.NET
+	NS3-02.AZURE-DNS.ORG
+	NS4-02.AZURE-DNS.INFO
+Technologies Used:
+	"URL": "https://chat.openai.com"
+	"Miscellaneous": "Webpack ; Open Graph ; Module Federation ; HTTP/3"
+	"Widgets": ""
+	"Analytics": "Datadog"
+	"Comment systems": ""
+	"Security": "Cloudflare Bot Management ; HSTS"
+	"Font scripts": ""
+	"CDN": "Cloudflare"
+	"Marketing automation": ""
+	"Advertising": ""
+	"Webcams": ""
+	"Tag managers": ""
+	"Live chat": "Intercom"
+	"JavaScript libraries": "PubSubJS ; Lodash ; core-js"
+	"Cookie compliance": ""
+	"Accessibility": ""
+	"SSL/TLS certificate authorities": ""
+	"Affiliate programs": ""
+	"Appointment scheduling": ""
+	"Surveys": ""
+	"A/B testing": ""
+	"Email": ""
+	"Personalisation": ""
+	"Retargeting": ""
+	"RUM": "Datadog"
+	"Geolocation": ""
+	"Browser fingerprinting": ""
+	"Loyalty & rewards": ""
+	"Feature management": ""
+	"Segmentation": ""
+	"Hosting": ""
+	"Translation": ""
+	"Reviews": ""
+	"Buy now pay later": ""
+	"Performance": ""
+	"Reservations & delivery": ""
+	"Referral marketing": ""
+	"Digital asset management": ""
+	"Content curation": ""
+	"Customer data platform": ""
+	"Cart abandonment": ""
+	"Shipping carriers": ""
+	"Recruitment & staffing": ""
+	"Returns": ""
+	"Livestreaming": ""
+	"Ticket booking": ""
+	"Augmented reality": ""
+	"Domain parking": ""
+	"Fundraising & donations": ""
+	"JavaScript frameworks": "React ; Emotion ; Next.js"
+	"Web servers": "Next.js"
+	"Mobile frameworks": ""
+	"Payment processors": ""
+	"SEO": ""
+	"User onboarding": ""
+	"Containers": ""
+	"PaaS": ""
+	"IaaS": ""
+	"WordPress plugins": ""
+	"Shopify apps": ""
+	"Form builders": ""
+	"Video players": ""
+	"Web frameworks": "Next.js"
+	"Caching": ""
+	"Web server extensions": ""
+	"Reverse proxies": ""
+	"Load balancers": ""
+	"UI frameworks": "Headless UI ; Tailwind CSS"
+	"WordPress themes": ""
+	"Shopify themes": ""
+	"Drupal themes": ""
+	"JavaScript graphics": ""
+	"Operating systems": ""
+	"Maps": ""
+	"Authentication": "NextAuth.js"
+	"Cross border ecommerce": ""
+	"Fulfilment": ""
+	"Ecommerce frontends": ""
+	"Rich text editors": ""
+	"Programming languages": "Node.js"
+	"Databases": ""
+	"CRM": "Intercom"
+	"Cryptominers": ""
+	"Editor": ""
+	"Search engines": ""
+	"CI": ""
+	"Database managers": ""
+	"Documentation tools": ""
+	"Hosting panels": ""
+	"Issue trackers": "Sentry"
+	"Webmail": ""
+	"Network services": ""
+	"": ""
+	"Development": "Emotion"
+	"Network storage": ""
+	"CMS": ""
+	"Message boards": ""
+	"Ecommerce": ""
+	"Photo galleries": ""
+	"Wikis": ""
+	"Blogs": ""
+	"LMS": ""
+	"Media servers": ""
+	"Remote Access": ""
+	"Feed readers": ""
+	"DMS": ""
+	"Page builder": ""
+	"Accounting": ""
+	"Static site generators": "Next.js"
+	"Phone number": ""
+	"Skype": ""
+	"WhatsApp": ""
+	"Email address": ""
+	"Email address (verified)": ""
+	"Email address (safe)": ""
+	"Twitter": ""
+	"Facebook": ""
+	"Instagram": ""
+	"GitHub": ""
+	"TikTok": ""
+	"YouTube": ""
+	"Pinterest": ""
+	"LinkedIn": ""
+	"Owler": ""
+	"Title": ""
+	"Description": ""
+	"Copyright": ""
+	"Copyright year": ""
+	"Responsive": ""
+	"schema.org types": ""
+	"Cert organisation": ""
+	"Cert country": ""
+	"Cert state": ""
+	"Cert locality": ""
+	"Cert issuer": ""
+	"Cert protocol": ""
+	"Cert expiry": ""
+	"SPF record": ""
+	"DMARC record": ""
+	"SSL/TLS enabled": ""
+	"Google Analytics": ""
+	"Google AdSense": ""
+	"Medianet": ""
+	"Optimizely": ""
+	"Company name": ""
+	"Inferred company name": ""
+	"Industry": ""
+	"About": ""
+	"Locations": ""
+	"Company size": ""
+	"Company type": ""
+	"Company founded": ""
+	"People": ""
+centralOps.net:
+	Name Server: NS1-02.AZURE-DNS.COM
+	Name Server: NS2-02.AZURE-DNS.NET
+	Name Server: NS3-02.AZURE-DNS.ORG
+	Name Server: NS4-02.AZURE-DNS.INFO
+	
+	
+	
+		

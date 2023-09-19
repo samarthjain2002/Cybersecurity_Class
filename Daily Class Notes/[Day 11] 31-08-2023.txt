@@ -1,0 +1,4 @@
+No class
+
+Instruction:
+As of today please practice xss, Lfi and client side filtering

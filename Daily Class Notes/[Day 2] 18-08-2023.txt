@@ -1,0 +1,39 @@
+PORT SCANNING
+
+Passive Information Gathering
+1) PORT SCANNING
+2) Enumeration
+3) Vulnerablility Scanning
+
+Running Virtual Machines
+
+1) Kali Linux (Attacker/Hacker)
+2) Windows7 (Victim1)
+3) Metasploitable (Victim2)
+4) Oswamp (Victim3)
+
+Connect all the virtual machines to a NAT network.
+This is to give different IP addresses to each of the VMs in the NAT network.
+
+Windows7
+Password: windows7
+IP address: 10.0.2.4
+
+Kali Linux:
+Username: kali
+Password: kali
+IP address: 10.0.2.15
+
+Command to find the IP address in Windows7: ipconfig
+COmmand to find the IP address in Kali Linux: ifconfig
+
+To find whether there is a connection between the machines, we ping them.
+Command: ping <IP address of the other machine>
+Ping can be from attacker(Kali Linux) to victim(Windows7) and vice-versa.
+
+nmap command:
+Command to find the ports of the victim: nmap <IP address>
+Finds the well-known 1000 ports of the victim.
+Some are open and most of them are closed.
+
+nmap command cheatsheet on the page: https://hackwithbkob.wordpress.com/tag/cheat-sheets/

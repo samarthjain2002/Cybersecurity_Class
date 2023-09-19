@@ -1,0 +1,30 @@
+Password: 311138
+
+Fuzzing
+
+Steps
+1) Configure burpsuite with browser
+2) Open target website login page
+3) Generate a dummy request with dummy credentials
+4) Navigate to the login request in burpsuite and send to the intruder
+5) Remove cookie line if exists
+
+Scenario 1: If both the username and password is unknown
+	select the username field first and 
+	
+	
+Attack type:
+Sniper				//Only for one fuzzing point(Ex: Only fuzzing password)
+Cluster bomb		//For multiple fuzzing point(Ex: Multiple fuzzing like username and password)
+
+Steps to complete password fuzzing
+Enter fake credentials
+Catch the credentials on Burpsuite
+Send the Request to Intruder
+In Position field in Intruder, select the fake password and press Add
+Select the Attack type as Sniper since we are only performing single-point(password) fuzzing
+In Payloads filed, Open Payload Settings and load a text file with possible keywords
+Click on Start Attack on the top-right corner of the Burpsuite
+
+Also
+Performed LFI using fuzzing for path

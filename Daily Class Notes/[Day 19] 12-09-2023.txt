@@ -1,0 +1,34 @@
+3 Flags
+1) Guest
+2) User
+3) Root
+
+#nmap -sn 192.168.50.1/24
+
+To find the IP address of a black-box machine
+Perform ifconfig command on Kali
+#ifconfig
+inet: 10.0.2.15
+netmask: 255.255.255.0
+Connect the black-box to NAT network
+In netmask of Kali, you can see that it is divided in four segments.
+Three segments have 255 and one segment has 0
+255 digit is constant and 0 is a variable
+Since segments with 255 are constant and are the first three blocks, this means that first three blocks of ip address is same for all the devices in the NAT network.
+Command: #nmap -sn 10.0.2.1/24			//The command displays(IP & MAC addresses) all the devices connected to the NAT network
+//Here 8*3=24 since each of the segment is an octet(8) and 3 constants
+
+
+In networking, a subnet mask (or netmask) is a 32-bit binary number used to divide an IP address into network and host portions. The subnet mask is represented in decimal form for ease of use, and it is commonly expressed in what is called "dotted-decimal notation," where each octet (8 bits) of the 32-bit mask is represented as a decimal number separated by periods. For example, a subnet mask of 255.255.255.0 is a common subnet mask used in IPv4 networking.
+
+In binary form, the subnet mask 255.255.255.0 is represented as:
+
+11111111.11111111.11111111.00000000
+
+In this notation, the first 24 bits are set to '1' (representing the network portion), and the last 8 bits are set to '0' (representing the host portion). This means that the first 24 bits of the IP address determine the network to which the device belongs, and the remaining 8 bits can be used to address individual hosts within that network.
+
+So, when you see a subnet mask of 255.255.255.0, it means that the first three octets of the IP address are part of the network, and the last octet can be used to address individual devices within that network.
+
+
+Mr. Robot VM
+IP Address: 10.0.2.7

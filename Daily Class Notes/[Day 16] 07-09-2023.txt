@@ -1,0 +1,77 @@
+MULTI-POINT FUZZING
+
+
+Null community
+https://null.community/chapters/1-bangalore
+
+
+Steps to install cracked Burpsuite Pro
+You can also refer the README.txt file
+Open directory: Desktop -> Burp
+Place the zip file
+Open the terminal in path /Desktop/Burp/
+Command: unzip burpsuite_pro_v2023.2.2.zip			//To unzip the file
+Open the unzipped folder in Terminal
+Path: /Desktop/Burp/burpsuite_pro_v2023.2.2/
+Command: java -jar Loader.jar						
+A pop-up will appear
+Click on Run (R..) -> OK
+Accept license agreement
+Copy the license key from the Loader(First window)
+Click on next
+Manual Activation
+Click on Copy request in the Burpsuite(Second window)
+Paste the Request on the Activation Request in the Loader(First window)
+Copy the Activation response
+Paste it in the Burpsuite(Second window)
+Next -> Finish
+Leave
+Next
+Start Burp
+Configure the burpsuite(Ensure it is running on localhost and port 8080)
+Use Burpsuite as usual
+
+
+To open the Burpsuite again
+Open the Terminal in path: /Desktop/Burp/burpsuite_pro_v2023		//Where the Loader.jar file is located
+Command: java -jar Loader.jar
+Click on R... button (Run button)
+Start Burp
+Use burpsuite as usual
+
+
+Copy the 6 commands in the README.txt file (Lines 27 to 32)
+Paste it in a new text file to modify it
+
+
+Type this command in /home/kali/Desktop/
+cp /usr/share/wordlists/metasploit/unix_users.txt .			//To copy the users keyword from sourse to destination
+   This is source								  This is destination(pwd)
+//unix_users.txt contains all the common usernames used on the web
+
+cp /usr/share/wordlists/metasploit/unix_passwords.txt .
+   This is source	    						  	  This is destination(pwd)
+//unix_passwords.txt contains all the common usernames used on the web
+
+
+To perform multi-point fuzzing
+Open the login page and enter the fake credentials
+Catch the fake credentials in the burpsuite pro
+Send the HTTP Request message to Intruder
+Open the HTTP Request message in Intruder tab
+In the Positions field:
+Change the Attack type from Sniper to Cluster bomb
+Remove the cookie
+Click on clear on the right
+Select the username and click on Add on the right
+Select the password and click on Add on the right
+In the Payloads field:
+Set Payload set as 1
+Set the Payload type as Simple List
+Load the unix_users.txt				//Contains keywords for username
+Set Payload set as 2
+Set the Payload type as Simple List
+Load the unix_passwords.txt			//Contains keywords for password
+Note: If the password is selected and added first, then password list(unix_password.txt) should be loaded first in Payload set 1
+Click on Start Attack on the top-right corner of burpsuite
+In case of Mutillidae II, we can end the attack as we have attained the username and password of the login page in just the fifth request

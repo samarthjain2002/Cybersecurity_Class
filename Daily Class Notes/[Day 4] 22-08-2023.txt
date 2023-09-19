@@ -1,0 +1,18 @@
+VULNERABILITY SCANNING (Active Information Gathering)
+
+Categories of Vulnerability Scanning
+1) RCE (Remote Code Execution)	//any thing but should write code for it
+2) Command Execution			//only executes command allowed by the OS for the designated user
+3) DOS (Denial of Service)		//which blocks the authorized user from accessing it
+4) Backdoor						ES File Explorer, CCleaner, Cam Scanner
+5) Information disclosure (85%)
+
+Nessus is a widely used vulnerability assessment tool that helps organizations identify security weaknesses in their computer systems, networks, and applications. It was developed by Tenable Network Security and is often employed by security professionals, penetration testers, and system administrators to identify potential vulnerabilities that could be exploited by malicious actors.
+
+Nessus works by scanning target systems for known vulnerabilities using a large database of plugins. These plugins are regularly updated to include information about newly discovered vulnerabilities and their corresponding patches or fixes. When a scan is performed, Nessus compares the system's configuration and software versions against its database of vulnerabilities, producing a report that highlights potential security risks.
+
+The tool provides detailed information about vulnerabilities, including severity levels, potential impacts, and remediation recommendations. This allows organizations to prioritize and address the most critical vulnerabilities first, enhancing their overall security posture.
+
+Nessus can be used for both internal and external scans, covering a wide range of assets such as servers, workstations, network devices, and more. It has been an important asset in maintaining the security of networks and systems by helping organizations proactively identify and address vulnerabilities before they can be exploited by malicious actors.
+
+How to install Nessus on Kali Linux

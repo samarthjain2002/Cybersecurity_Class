@@ -1,0 +1,62 @@
+Presentation post-poned tomorrow (12-09-2023)
+
+
+Spider
+Scanning
+
+Web application scanning
+1) Technologies used
+2) Spidering
+3) Understand functions
+4) Try exploiting/identifying vulnerability
+	-> Fuzzing
+	-> Manually
+	
+
+Performing Fuzzing for SQLi (SQL Injection)
+Open DVWA in OWASP-BWA
+Select SQL Injection
+An input field is displayed
+Search for SecLists(Git_hub repository) for Fuzzing Dictionaries
+URL: https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/SQLi/quick-SQLi.txt
+The above link contains the fuzzing dictionary for SQLi
+Download the quick-SQLi.txt
+Perform fuzzing by loading this file as payload
+Read all the request and responses to see all the SQLi attacks
+
+
+Performing Fuzzing for File Inclusion
+Open DVWA in OWASP-BWA
+Select File Inclusion
+An input field is displayed
+Search for SecLists(Git_hub repository) for Fuzzing Dictionaries
+URL: https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt
+The above link contains the fuzzing dictionary for File Inclusion
+Download the LFI-LFISuite-pathtotest-huge.txt
+Perform fuzzing by loading this file as payload
+Read all the request and responses to see all the File Inclusion attacks
+
+
+Performing Fuzzing for XSS(Cross-Site Scripting)
+Open DVWA in OWASP-BWA
+Select XSS Reflected
+An input field is displayed
+Search for SecLists(Git_hub repository) for Fuzzing Dictionaries
+URL: https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/XSS/XSS-BruteLogic.txt
+The above link contains the fuzzing dictionary for XSS
+Download the XSS-BruteLogic.txt
+Perform fuzzing by loading this file as payload
+Read all the request and responses to see all the XSS attacks
+
+	
+Open the OWASP-BWA in browser
+Capture the HTTP Request message
+Go to the Target tab of Burp suite
+Right click on http://10.0.2.6/		OWASP IP address
+Click on Scan
+Select Crawl and Audit from the radio buttons in Scan Details
+Select Lightweight or other in Scan Configuration
+Click on OK
+Open the Dashboard tab in Burp suite
+Turn on Running or Finished
+You can see all the information about the Crawl and Audit

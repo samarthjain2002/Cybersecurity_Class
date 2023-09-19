@@ -1,0 +1,23 @@
+Filter Burp Suite Target
+Show only requested items/parameters
+Show only in-scope items
+Filter by MIME type - CSS
+Filter by status code - 4XX (Client-side error)
+Filter by File extension - Hide
+
+XSS - Cross Site Scripting
+Where attacker tries to inject/execute malicious javascript/html on Victim's browser
+Aim/Goal: Stealing cookies, Redirecting user to a malicious website
+Where: Any input field, which echoes back the input
+Types
+1) Reflected/Non-persistent XSS - Search or any  temporary page
+2) Stored/Persistent XSS - Comments, edit profile or any permanent page
+
+Owasp
+root
+owaspbwa
+IP address: 10.0.2.6
+
+DVWA
+username: admin
+Password: admin

